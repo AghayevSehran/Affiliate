@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
-//import { PartnersPage } from "../pages/partners/partners";
+import { PartnersPage } from "../pages/partners/partners";
 
 import { AuthenticationService } from '../providers/user-data';
 import { TicketsPage } from "../pages/tickets/tickets";

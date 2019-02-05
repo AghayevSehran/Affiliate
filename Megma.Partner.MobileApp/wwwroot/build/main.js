@@ -4363,7 +4363,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-//import { PartnersPage } from "../pages/partners/partners";
 
 
 
@@ -4500,22 +4499,15 @@ var PartnerApp = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]) === "function" && _a || Object)
     ], PartnerApp.prototype, "nav", void 0);
     PartnerApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\app\app.template.html"*/'<ion-split-pane>\n\n    <!-- logged out menu -->\n\n    <ion-menu id="loggedInMenu1" [content]="content">\n\n        <ion-header>\n\n            <ion-toolbar>\n\n                <ion-title><img class="pinolo-leftside-logo" src="assets/img/appicon.svg" alt="Pinolo Partner"></ion-title>\n\n            </ion-toolbar>\n\n        </ion-header>\n\n        <ion-content class="outer-content">\n\n\n\n            <ion-list>\n\n                <ion-list-header>{{\'app.menu.root\'|translate}}</ion-list-header>\n\n                <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">\n\n                  <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon> {{p.title|translate}}\n\n                </button>\n\n            </ion-list>\n\n\n\n            <ion-list>\n\n                <ion-list-header>{{\'app.menu.reports\'|translate}}</ion-list-header>\n\n                <button ion-item menuClose *ngFor="let p of appReports" (click)="openPage(p)">\n\n                  <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>{{p.title|translate}}\n\n                </button>\n\n            </ion-list>\n\n\n\n\n\n            <ion-list>\n\n                <ion-list-header>{{\'app.menu.other\'|translate}}</ion-list-header>\n\n                <button ion-item menuClose *ngFor="let p of appOthers" (click)="openPage(p)">\n\n                  <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon> {{p.title|translate}}\n\n                </button>\n\n            </ion-list>\n\n\n\n        </ion-content>\n\n\n\n    </ion-menu>\n\n    \n\n\n\n    <!-- main navigation -->\n\n    <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n\n\n</ion-split-pane>'/*ion-inline-end:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\app\app.template.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* AuthenticationService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* AuthenticationService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__["a" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]) === "function" && _k || Object])
     ], PartnerApp);
     return PartnerApp;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 
 //# sourceMappingURL=app.component.js.map
