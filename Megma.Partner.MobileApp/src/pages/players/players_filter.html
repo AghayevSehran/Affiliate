@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">{{'app.btn.cancel'|translate}}</button>
+        </ion-buttons>
+
+        <ion-title>{{'app.general.text.filtre'|translate}}</ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="applyFilters()" strong>{{'app.btn.apply'|translate}}</button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+    <ion-list>
+
+        <ion-item>
+            <ion-label>{{'app.general.text.player'|translate}}:</ion-label>
+            <ion-input [(ngModel)]="searchParams.username" type="text"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label>{{'app.general.label.name'|translate}}:</ion-label>
+            <ion-input [(ngModel)]="searchParams.name" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.label.surname'|translate}}:</ion-label>
+            <ion-input [(ngModel)]="searchParams.surname" type="text"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label>{{'app.general.label.active'|translate}}:</ion-label>
+            <ion-select [(ngModel)]="searchParams.active">
+                <ion-option value="" selected>{{'app.options.item.all'|translate}}</ion-option>
+                <ion-option value="true">{{'app.options.item.only_active'|translate}}</ion-option>
+                <ion-option value="false">{{'app.options.item.only_passive'|translate}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.text.direct'|translate}}:</ion-label>
+            <ion-select [(ngModel)]="searchParams.direct">
+                <ion-option value="false">{{'app.general.text.allplayer'|translate}}</ion-option>
+                <ion-option value="true">{{'app.general.text.only_myplayer'|translate}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+
+
+    </ion-list>
+
+
+</ion-content>

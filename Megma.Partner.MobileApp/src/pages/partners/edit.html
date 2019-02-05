@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar>
+
+        <ion-title>{{'app.partners.title_edit'|translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+    <form #partnerForm="ngForm" novalidate>
+
+        <ion-list class="form-list">
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.id'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.Id" type="number" name="id" #id="ngModel" disabled required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.name'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.Name" type="text" name="name" #name="ngModel" required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="name.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.name_msg'|translate}}
+            </p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.email'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.Email" type="text" name="email" #email="ngModel" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.username'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.Username" type="text" #username="ngModel" name="username" disabled required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.text.balance'|translate}}</ion-label>
+                <ion-input [(ngModel)]="balance" disabled name="balance"></ion-input>
+            </ion-item>
+
+            <!-- <ion-item>
+                <ion-label floating primary>{{'app.general.label.credit'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.Credit" type="number" #creditx="ngModel" name="creditx" required></ion-input>
+            </ion-item> -->
+
+            <!-- <p ion-text [hidden]="creditx.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.credit_msg'|translate}}
+            </p> -->
+
+            <ion-item>
+                <ion-label>{{'app.general.label.active'|translate}}</ion-label>
+                <ion-checkbox [(ngModel)]="partner.Active" name="active"></ion-checkbox>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>{{'app.general.label.partneraccess' |translate}}</ion-label>
+                <ion-checkbox [(ngModel)]="partner.CanCreatePartner" name="cancreatepartner"></ion-checkbox>
+            </ion-item>
+
+            <div text-center padding>
+                <button ion-button type="submit" (click)="savePartner(partnerForm)" padding text-center>{{'app.btn.save'|translate}}</button>
+            </div>
+
+        </ion-list>
+    </form>
+
+    <form>
+
+        <ion-item>
+            <ion-label floating primary>{{'app.general.label.credit'|translate}}</ion-label>
+            <ion-input [(ngModel)]="credit" type="text" name="credits"></ion-input>
+        </ion-item>
+
+        <div text-center padding>
+            <button ion-button (click)="depositCredit()" padding text-center>{{ 'app.btn.deposit' | translate }}</button>
+            <button ion-button (click)="withdrawCredit()" padding text-center>{{ 'app.btn.withdraw' | translate }}</button>
+        </div>
+        
+    </form>
+
+</ion-content>

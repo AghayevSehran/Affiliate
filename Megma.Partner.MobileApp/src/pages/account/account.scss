@@ -1,0 +1,28 @@
+page-account img {
+    max-width: 75px;
+    border-radius: 50%;
+}
+
+ion-grid.grid{
+    padding: 0;
+
+    ion-row{
+        ion-col{
+            font-size: 3.5vw;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    
+}
+
+button{
+    .item-inner{
+        .input-wrapper{
+            .col{ 
+                padding: 0 8px !important;
+            }
+        }
+    }
+}

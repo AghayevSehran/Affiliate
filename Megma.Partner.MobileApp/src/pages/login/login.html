@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title><span [translate]="'page.login.title'"></span></ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="logo">
+        <img src="assets/img/appicon.svg" alt="Logo">
+    </div>
+
+    <form #loginForm="ngForm" novalidate>
+        <ion-list no-lines>
+            <ion-item>
+                <ion-label [translate]="'page.login.label.username'"></ion-label>
+                <ion-input [(ngModel)]="login.username" name="username" type="text" class="input" #username="ngModel" spellcheck="false" autocapitalize="off" required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="username.valid || submitted == false" class="form-error" color="danger" padding-left [translate]="'page.login.label.username.error'"></p>
+            <ion-item>
+                <ion-label [translate]="'page.login.label.password'"></ion-label>
+                <ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="password.valid || submitted == false" class="form-error" color="danger" padding-left [translate]="'page.login.label.password.error'"></p>
+
+            <ion-item>
+                <ion-label [translate]="'page.login.label.language'"></ion-label>
+                <ion-select [(ngModel)]="login.language" name="langauge" (ionChange)="onChangeLanguage(login.language)">
+                    <ion-option value="tr">Türkçe</ion-option>
+                    <ion-option value="en">English</ion-option>
+                    <ion-option value="de">Deutsch</ion-option>
+                </ion-select>
+            </ion-item>
+            
+        </ion-list>
+
+        <ion-row responsive-sm>
+            <ion-col text-center>
+                <button ion-button (click)="onLogin(loginForm)" type="submit" medium> <span [translate]="'app.btn.login'"></span> </button>
+            </ion-col>
+        </ion-row>
+    </form>
+
+</ion-content>

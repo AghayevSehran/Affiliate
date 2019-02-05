@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{item.Id}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="item">
+
+        <ion-list>
+            <ion-item>
+                {{'app.general.text.transaction_date'|translate}}
+                <ion-note item-end class="color-dark">{{item.TransactionDate| date:'dd.MM.yyyy HH:mm'}}</ion-note>
+            </ion-item>
+            <ion-item>
+                {{'app.general.text.transaction_type'|translate}}
+                <ion-note item-end class="color-dark">{{item.TransactionType}}</ion-note>
+            </ion-item>
+            <ion-item>
+                {{'app.general.text.transaction_direction'|translate}}
+                <ion-note item-end class="color-dark">{{item.Direction}}</ion-note>
+            </ion-item>
+            <ion-item [ngClass]="{'down' : (item.LastBalance>item.Balance), 'up' : (item.Balance > item.LastBalance)}">
+                {{'app.general.text.amount'|translate}}
+                <ion-note item-end>{{item.Amount}}</ion-note>
+            </ion-item>
+            <ion-item>
+                {{'app.general.text.lastbalance'|translate}}
+                <ion-note item-end class="color-dark">{{item.LastBalance}}</ion-note>
+            </ion-item>
+            <ion-item>
+                {{'app.general.text.balance'|translate}}
+                <ion-note item-end class="color-dark">{{item.Balance}}</ion-note>
+            </ion-item>
+
+            <ion-item>
+                {{'app.general.text.currency'|translate}}
+                <ion-note item-end class="color-dark">{{item.Currency}}</ion-note>
+            </ion-item>
+
+
+        </ion-list>
+
+    </div>
+</ion-content>

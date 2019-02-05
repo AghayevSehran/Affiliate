@@ -1,0 +1,59 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{'app.menu.reports.depositwithdraw'|translate}}</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="presentFilter()">
+                <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+    
+
+    <ion-list class="normal-font">
+        <!-- <button md-button (click)="reportsTree.treeModel.expandAll()">Expand</button> -->
+        <ion-list-header no-padding>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-6 text-left> <span style="width: 20px; height: 20px; background: green"></span> {{'app.btn.deposit'|translate}}</ion-col>
+                    <ion-col col-6 text-left> <span style="width: 20px; height: 20px; background: red"></span> {{'app.btn.withdraw'|translate}}</ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list-header>
+
+        <ion-list-header no-padding>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 text-left>{{'app.general.text.username'|translate}}</ion-col>
+                    <ion-col col-4 text-center>{{'app.general.text.amount'|translate}}</ion-col>
+                    <ion-col col-4 text-right>{{'app.general.text.balance'|translate}}</ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list-header>
+
+        <!-- <button md-button (click)="partnersTree.treeModel.expandAll()">Expand</button> -->
+
+        <ion-item *ngFor="let item of nodes">
+            <div>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-4 text-left class="ellipsis"><span class="partner-name">{{ item.Username }}</span></ion-col>
+                        <ion-col col-4 text-center><span class="credit" [class.green]="item.Amount > 0" [class.red]="item.Amount < 0">{{ item.Amount|number:'.2-2' }} {{ item.Currency|currencyIcon }}</span></ion-col>
+                        <ion-col col-4 text-right><span class="balance">{{ item.Balance|number:'.2-2' }} {{ item.Currency|currencyIcon }}</span></ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>

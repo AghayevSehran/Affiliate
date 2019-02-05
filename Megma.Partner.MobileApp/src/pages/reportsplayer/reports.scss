@@ -1,0 +1,40 @@
+page-player-reports {
+  .list {
+    .item {
+      padding-left:0;
+
+
+      .item-inner {
+        padding-right: 0;
+        .label {
+          margin: 0 !important;
+        }
+      }
+    }
+    .grid {
+      padding: 0;
+      .row {
+        padding:0; 
+        
+        &.partner-title {
+          background: $color-blue;
+          color: $color-white;
+          .col {
+            padding: 4px !important;
+          }
+        }
+        &.border {
+          border-bottom: 1px solid $color-graylight;
+          padding-bottom: 5px;
+          margin-bottom: 6px;
+        }
+        .col {
+          span {
+            font-weight: bold;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}

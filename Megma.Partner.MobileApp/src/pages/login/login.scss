@@ -1,0 +1,28 @@
+// Styles for all of the user pages:
+// Login, Signup, Support
+page-user {
+    .logo {
+        padding: 20px 0;
+        text-align: center;
+        img {
+            max-width: 210px;
+        }
+    }
+    .list {
+        margin-bottom: 0;
+        .item {
+            margin-top: 10px;
+        }
+        .input-wrapper {
+            ion-label {
+                min-width: 100px;
+            }
+        }
+        .input {
+            border: 1px solid #ddd;
+        }
+    }
+    .ion-button {
+        border-radius: 0;
+    }
+}

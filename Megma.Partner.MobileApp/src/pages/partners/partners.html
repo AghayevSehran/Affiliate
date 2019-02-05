@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{'app.partners.title'|translate}}</ion-title>
+
+        <ion-buttons end *ngIf="canCreatePartner">
+            <button ion-button icon-left [navPush]="NewPartnerForm"><ion-icon name="person-add"></ion-icon> {{'app.btn.addnew'|translate}}</button>
+        </ion-buttons>
+
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list class="normal-font">
+
+        <ion-list-header no-padding>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-6 text-left>{{'app.general.text.username'|translate}}</ion-col>
+                    <!-- <ion-col col-4 text-center>{{'app.general.text.credit'|translate}}</ion-col> -->
+                    <ion-col col-6 text-right>{{'app.general.text.balance'|translate}}</ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list-header>
+
+        <!-- <button md-button (click)="partnersTree.treeModel.expandAll()">Expand</button> -->
+
+        <tree-root [nodes]="nodes" [focused]="true" [options]="options">
+
+            <ng-template #treeNodeTemplate let-node let-index="index">
+
+                <ion-list class="normal-font nomargin">
+
+                    <ion-item-sliding>
+                        <ion-item>
+                            <div class="note-item" [ngClass]="{'disabled':!node.data.Active}">
+                                <ion-grid>
+                                    <ion-row>
+                                        <ion-col col-6 text-left class="ellipsis"><span class="partner-name">{{ node.data.Username }}</span></ion-col>
+                                        <!-- <ion-col col-4 text-center><span class="credit">{{ node.data.Credit|number:'.2-2' }} {{ node.data.Currency|currencyIcon }}</span></ion-col> -->
+                                        <ion-col col-6 text-right><span class="balance">{{ node.data.Balance|number:'.2-2' }} {{ node.data.Currency|currencyIcon }}</span></ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </div>
+                        </ion-item>
+                        <ion-item-options side="right">
+                            <button ion-button color="primary" [navPush]="EditPartnerForm" [navParams]="{id:node.data.Id, balance: node.data.Balance}" small>{{'app.btn.edit'|translate}}</button>
+                            <button ion-button color="dark" (click)="productPermits(node.data.Id)" small>{{'app.btn.product_permission'|translate}}</button>
+                            <button ion-button color="danger" (click)="changePassword(node.data.Id)" small>{{'app.btn.change_password' | translate}}</button>
+
+                        </ion-item-options>
+
+                
+                    </ion-item-sliding>
+                </ion-list>
+            </ng-template>
+
+        </tree-root>
+
+    </ion-list>
+
+</ion-content>

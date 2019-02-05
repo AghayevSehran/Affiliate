@@ -1,0 +1,213 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title *ngIf="player">{{player.Name}} {{player.Surname}}</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar>
+        <ion-segment [(ngModel)]="userSegment">
+            <ion-segment-button value="AccountInfo"><span [translate]="'page.account.tab.account_info'"></span></ion-segment-button>
+            <ion-segment-button value="CashTransactions" (ionSelect)="getCashTransactions()"><span [translate]="'app.general.text.incomeexpense'"></span></ion-segment-button>
+            <ion-segment-button value="TransactionHistory" (ionSelect)="getTransactions()"><span [translate]="'page.account.tab.transaction_hisorty'"></span></ion-segment-button>
+            <ion-segment-button value="Tickets" (ionSelect)="getPlayerTickets()"><span [translate]="'page.account.tab.tickets'"></span></ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+    <div class="page-content" [ngSwitch]="userSegment">
+
+        <div text-center *ngIf="player">
+
+
+            <ion-grid *ngSwitchCase="'AccountInfo'">
+                <ion-row wrap>
+                    <ion-col col-50>
+                        <h3>{{player.Name}} <br /> {{player.Balance |number:'.2-2'}} {{player.Currency|currencyIcon}}</h3>
+                    </ion-col>
+                    <ion-col col-50 text-center>
+                        <div class="user-buttons">
+                            <button ion-button color="primary" small (click)="openPayIn(player)">{{'app.btn.deposit'|translate}}</button>
+                            <button ion-button color="dark" small (click)="openPayOut(player)">{{'app.btn.withdraw'|translate}}</button>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+            <ion-list class="floated-list small-font" *ngSwitchCase="'AccountInfo'">
+                <ion-item>
+                    <label [translate]="'page.account.table.id'"></label>:
+                    <span>{{player.Id}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.username'"></label>:
+                    <span>{{player.Username}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.name'"></label>:
+                    <span>{{player.Name}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.surname'"></label>:
+                    <span>{{player.Surname}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.email'"></label>:
+                    <span>{{player.Email}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.partner'"></label>:
+                    <span>{{player.Email}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.currency'"></label>:
+                    <span>{{player.Currency}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.language'"></label>:
+                    <span>{{player.Language}}</span>
+                </ion-item>
+
+            </ion-list>
+
+
+            <ion-list inset *ngSwitchCase="'AccountInfo'">
+                <button ion-button color="primary" (click)="editPlayer(player)" icon-left small>
+                        <ion-icon name="create"></ion-icon>{{'app.btn.edit' | translate}}
+                    </button>
+                <button ion-button color="dark" (click)="changePassword(player)" icon-left small>
+                        <ion-icon name="key"></ion-icon>{{'app.btn.change_password' | translate}}
+                    </button>
+            </ion-list>
+
+        </div>
+
+
+        <ion-grid class="medium" *ngSwitchCase="'CashTransactions'">
+            <ion-row>
+                <ion-col col-10 text-left>
+                    <ion-item>
+                        <ion-label>{{'app.general.text.startdate'|translate}}:</ion-label>
+                        <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DDDD MM YYYY"  [(ngModel)]="cashParams.startDate" cancelText="{{'app.btn.cancel'|translate}}" doneText="{{'app.btn.ok'|translate}}"></ion-datetime>
+                    </ion-item>
+
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-10 text-right>
+                    <ion-item>
+                        <ion-label>{{'app.general.text.enddate'|translate}}:</ion-label>
+                        <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="cashParams.endDate" cancelText="{{'app.btn.cancel'|translate}}" doneText="{{'app.btn.ok'|translate}}"></ion-datetime>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-2>
+                    <button ion-button icon-only class="filterbtn" (click)="getCashTransactions()">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-list no-padding *ngSwitchCase="'CashTransactions'" class="small-font">
+            <ion-list-header no-padding>
+
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-4 text-left>{{'app.general.text.date'|translate}}</ion-col>
+                        <ion-col col-4 text-right>{{'app.general.text.transactiontype'|translate}}</ion-col>
+                        <ion-col col-4 text-right>{{'app.general.text.amount'|translate}}</ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-list-header>
+
+
+            <button *ngFor="let row of cashtransactions" no-padding ion-item>
+                <ion-grid no-padding>
+                    <ion-row>
+                        <ion-col col-4 text-left>{{row.TransactionDate|date:'dd/MM/yyyy HH:mm'}}</ion-col>
+                        <ion-col col-4 text-right>{{row.TransactionType}}</ion-col>
+                        <ion-col col-4 text-right class="{{row.Amount|updown}}">{{row.Amount|number:'.2-2'}}</ion-col>
+                    </ion-row>
+                </ion-grid>
+                </button>
+        </ion-list>
+
+
+        <ion-list *ngSwitchCase="'TransactionHistory'" class="small-font">
+            <ion-list-header no-padding>
+
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-4 text-left>{{'app.general.text.amount'|translate}}</ion-col>
+                        <ion-col col-4 text-center>{{'app.general.text.lastbalance'|translate}}</ion-col>
+                        <ion-col col-4 text-right>{{'app.general.text.balance'|translate}}</ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-list-header>
+
+            <button *ngFor="let row of transactions" no-padding ion-item (click)="goTransactionDetail(row)">
+
+                <ion-grid no-padding>
+                    <ion-row [ngClass]="{'down' : (row.LastBalance>row.Balance), 'up' : (row.Balance > row.LastBalance)}">
+                        <ion-col col-4 text-left>{{row.Amount|number:'.2-2'}} {{row.Currency|currencyIcon}}</ion-col>
+                        <ion-col col-4 text-center>{{row.LastBalance|number:'.2-2'}} {{row.Currency|currencyIcon}}</ion-col>
+                        <ion-col col-4 text-right>{{row.Balance|number:'.2-2'}} {{row.Currency|currencyIcon}}</ion-col>
+                    </ion-row>
+                </ion-grid>
+                
+            </button>
+        </ion-list>
+
+
+        <ion-list #ticketList *ngSwitchCase="'Tickets'" class="ticket-list zebra small-font">
+            <ion-list-header no-padding>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-3 text-left>{{'app.general.text.date'|translate}}</ion-col>
+                        <ion-col col-4 text-center>{{'app.general.text.amount'|translate}}</ion-col>
+                        <ion-col col-1 text-center>{{'app.general.text.live'|translate}}</ion-col>
+                        <ion-col col-4 text-right>{{'app.general.text.payout'|translate}}</ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-list-header>
+
+            <button *ngFor="let row of tickets" no-padding ion-item [attr.status]="'st'+ row.Status | lowercase" (click)="goTicketDetail(row.PlayerId, row.Id)">
+            <ion-grid no-padding>
+                <ion-row>
+                    <ion-col col-3 text-left>{{row.TicketDate|gettime}}</ion-col>
+                    <ion-col col-4 text-center>{{row.Stake|number:'.2-2'}} {{row.Currency|currencyIcon}}</ion-col>
+                    <ion-col col-1 text-center><span class="live-icon" *ngIf="row.IsLive"><img src="/assets/img/icon-live-red.gif" /></span></ion-col>
+                    <ion-col col-4 text-right>{{row.Payout|number:'.2-2'}} {{row.Currency|currencyIcon}}</ion-col>
+                </ion-row>
+            </ion-grid>                
+        </button>
+
+
+            <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">
+                <ion-infinite-scroll-content></ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+
+
+        </ion-list>
+
+
+
+
+    </div>
+
+
+</ion-content>

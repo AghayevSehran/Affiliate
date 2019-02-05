@@ -1,0 +1,189 @@
+$categories:( st22: color($colors, primary), st25: #AC282B, st20: #8E8D93, st21: #8E8D93, st23: #33B67C, st24: #FD8B2D, st26: #0000cc);
+@function auxiliary-categories() {
+    @return map-remove($categories);
+}
+
+page-tickets,
+page-ticketdetail,
+page-player-detail {
+    @each $status,
+    $value in auxiliary-categories() {
+        button[status=#{$status}] ion-label {
+            border-left: 4px solid $value;
+            margin-left: 10px;
+        }
+        .ts-#{$status} {
+            background: $value;
+        }
+        .tsc-#{$status} {
+            color: $value;
+        }
+    }
+}
+
+.live-icon {
+    img {
+        max-width: 25px;
+    }
+}
+
+
+.ticket-list{
+    .grid{
+        .col{
+          font-size: 11px;   
+        }
+    }
+}
+
+
+.ticket-summary {
+    margin-bottom: 10px;
+    .item-block {
+        padding-left: 0!important;
+        .item-inner {
+            padding-right: 0 !important;
+        }
+        .label {
+            margin: 0;
+            .grid {
+                padding: 0;
+                .row {
+                    border-bottom: 1px solid $color-graylight;
+                    &:nth-child(odd) {
+                        background: rgba(0, 0, 0, .015);
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+                .col {
+                    font-size: 12px;
+                    text-align: text-justify;
+                    span {
+                        font-weight: bold;
+                    }
+                    &:last-child {
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Ticket Detail */
+
+.ticket-details-page {
+    ion-list-header {
+        min-height: 3rem;
+        .label {
+            margin: 10px 8px 10px 0;
+        }
+    }
+
+    .button-ios-danger{
+        background: $color-yellow;
+    }
+
+    .text-danger{
+        color:$color-blue;
+    }
+}
+
+//ticket detail
+$ticket-waiting: #00a9ef;
+$ticket-won: #00cc00;
+$ticket-lost: #ff0000;
+$ticket-sale: #0000cc;
+$ticket-cancel: #a9a9a9;
+$ticket-revenue: #a9a9a9;
+$ticket-void: #ffa900;
+$ticket-denied: #000000;
+$list-height: 65px;
+$live-icon-color: rgba(3, 82, 21, 1);
+$system-icon-color: rgba(32, 165, 201, 1);
+.ticket-item {
+    padding: 0;
+    .item-inner {
+        padding-right: 0 !important;
+        ion-label {
+            margin: 0;
+        }
+    }
+}
+
+.ticket-detail {
+    display: block;
+    width: 100%;
+    .tournament-info {
+        background: rgba(0, 0, 0, .1);
+        line-height: 23px;
+        font-size: 11px;
+        .grid {
+            padding: 0;
+            .col {
+                &.status {
+                    span {
+                        color: $color-white;
+                        padding: 4px 6px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .tournament-name {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .match-info {
+        padding: 0;
+        h3 {
+            background: #2A7394;
+            font-size: 13px;
+            white-space: nowrap;
+            margin-bottom: 0;
+            padding: 8px;
+            color: $color-white;
+        }
+        .live-info {
+            text-align: ceter;
+            font-size: 11px;
+            color: $color-red;
+            .time {
+                margin-left: 5px;
+            }
+        }
+        .sub-details {
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            .grid {
+                padding: 0;
+            }
+            .col {
+                font-size: 11px;
+                line-height: 22px;
+                &.isLive {
+                    .icon {
+                        font-size: 2.5em !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Filter */
+
+page-ticket-filter {
+    ion-list.list {
+        ion-label,
+        ion-select {
+            font-size: 13px;
+        }
+    }
+}

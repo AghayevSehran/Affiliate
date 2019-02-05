@@ -1,0 +1,135 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{'app.tickets.title.detail'|translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="ticket-details-page" *ngIf="ticket">
+        <ion-list class="ticket-summary">
+            <ion-list-header>
+                {{'app.tickets.title.ticketinfo'|translate}}
+                <button *ngIf="canCancelTicket" ion-button color="danger" (click)="cancelTicket(ticket.TicketId)" icon-left item-end>
+                    <ion-icon name="power"></ion-icon>{{'app.btn.cancel_ticket' | translate}}
+                </button>
+            </ion-list-header> 
+            <ion-item>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <span>{{'app.tickets.label.ticketno'|translate}} :</span> {{ticket.TicketId}}
+                        </ion-col>
+                        <ion-col>
+                            <span>{{'app.tickets.label.partner'|translate}} :</span> {{ticket.Partner}}
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <span>{{'app.tickets.label.ticket_date'|translate}} :</span> {{ticket.TicketDate | date:'dd/MM/yyyy
+                            HH:mm'}}
+                        </ion-col>
+                        <ion-col>
+                            <span>{{'app.tickets.label.player'|translate}} :</span> {{ticket.Player}}
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <span>{{'app.tickets.label.amount'|translate}} :</span> {{ticket.Stake}}
+                        </ion-col>
+                        <ion-col>
+                            <div *ngIf="!canViewCountry"><span>{{'app.tickets.label.ip'|translate}} :</span> {{ticket.PlayerIp}}</div>
+                            <div *ngIf="canViewCountry"><span>{{'app.tickets.label.country'|translate}} :</span> <span class="text-danger">{{ticket.CountryName}}</span></div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <span>{{'app.tickets.label.stakeperbet'|translate}} :</span> {{ticket.StakePerbet}}
+                        </ion-col>
+                        <ion-col>
+                            <span>{{'app.tickets.label.currency'|translate}} :</span> {{ticket.Currency}}
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <span>{{'app.tickets.label.payout'|translate}} :</span> {{ticket.Payout}}
+                        </ion-col>
+                        <ion-col>
+                            <span>{{'app.tickets.label.status'|translate}} :</span> {{ticket.Status}}
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row *ngIf="ticket.IsSystem">
+                        <ion-col>
+                            <span>{{'app.tickets.label.system'|translate}} :</span> {{ticket.System}} / {{ticket.BetCount}}
+                        </ion-col>
+                        <ion-col></ion-col>
+                    </ion-row>
+
+
+                </ion-grid>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list no-margin>
+            <ion-list-header>{{'app.tickets.title.teams'|translate}}</ion-list-header>
+
+            <ion-item *ngFor="let row of ticket.Details" class="ticket-item">
+
+                <div class="ticket-detail">
+
+                    <div class="tournament-info">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col col-9>
+                                    <div class="tournament-name">{{row.Tournament}}</div>
+                                </ion-col>
+                                <ion-col col-3 text-right class="status">
+                                    <span class="status text-center ts-st{{row.DStatus}}">{{row.Status}}</span>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+                    <div class="match-info">
+                        <h3 text-center>{{row.Teams}}</h3>
+                        <div class="sub-details">
+
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-4 class="ellipsis">
+                                        {{'app.tickets.title.date'|translate}} <br />{{row.MatchDate | date:'dd/MM/yyyy HH:mm'}}
+                                    </ion-col>
+                                    <ion-col col-2 text-center class="isLive">
+                                        {{'app.tickets.title.live'|translate}} <br />
+                                        <ion-icon name="checkmark" color="primary" *ngIf="row.Live"></ion-icon>
+                                        <ion-icon name="close" color="danger" *ngIf="!row.Live"></ion-icon>
+                                    </ion-col>
+                                    <ion-col col-2 text-center>
+                                        {{'app.tickets.title.oddsvalue'|translate}} <br />{{row.OddsValue}}
+                                    </ion-col>
+                                    <ion-col col-2 text-center>
+                                        {{'app.tickets.title.bet'|translate}} <br /> <span class="elliptis">{{row.OddsType}}</span>
+                                    </ion-col>
+                                    <ion-col col-2 text-center>
+                                        {{'app.tickets.title.wager'|translate}} <br /> {{row.Outcome}}
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+
+                        </div>
+                    </div>
+                </div>
+
+            </ion-item>
+
+        </ion-list>
+    </div>
+</ion-content>

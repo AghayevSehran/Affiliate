@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{'app.players.title'|translate}}</ion-title>
+     </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list #playerList *ngIf="players" class="player-list zebra small-font">
+
+        <ion-list-header no-padding>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 text-left>{{'app.general.text.partner'|translate}}</ion-col>
+                    <ion-col col-4 text-center>{{'app.general.text.player'|translate}}</ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list-header>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6>
+                    <ion-item class="border">
+                        <ion-label>{{'app.btn.only_myplayers'|translate}}</ion-label>
+                        <ion-checkbox [(ngModel)]="searchParams.direct"   disabled="true" (ionChange)="reloadPage()"></ion-checkbox>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <button ion-button item-end icon-left (click)="presentFilter()">
+                            <ion-icon name="search"></ion-icon>
+                            {{'app.btn.searchplayer'|translate}}
+                        </button>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+
+
+
+
+        <ion-item-sliding *ngFor="let row of players" no-padding>
+            <ion-item no-padding (click)="goUserDetail(row.Id)">
+                <ion-grid no-padding>
+                    <ion-row [ngClass]="{'line-through': !row.IsActive}">
+                        <ion-col col-4 text-left>{{row.Partner}}</ion-col>
+                        <ion-col col-4 text-center>{{row.Username}}</ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-item>
+            <ion-item-options side="left">
+                <button ion-button color="dark" (click)="changePassword(row)">
+                    <ion-icon name="remove"></ion-icon>
+                    {{'app.btn.change_password'|translate}}
+                </button>
+            </ion-item-options>
+
+            <ion-item-options side="right">
+                <button ion-button color="dark" (click)="productPermits(row)" small>
+                    <ion-icon name="cog"></ion-icon>
+                    {{'app.btn.product_permission'|translate}}
+                </button>
+                <button ion-button color="dark" (click)="openPayOut(row)">
+                    <ion-icon name="remove"></ion-icon>
+                    {{'app.btn.withdraw'|translate}}
+                </button>
+                <button ion-button color="primary" (click)="openPayIn(row)">
+                    <ion-icon name="add"></ion-icon>
+                    {{'app.btn.deposit'|translate}}
+                </button>
+
+            </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-infinite-scroll *ngIf="infiteMore" (ionInfinite)="$event.waitFor(doInfinite())">
+            <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+
+    </ion-list>
+
+</ion-content>

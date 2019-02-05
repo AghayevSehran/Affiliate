@@ -1,0 +1,37 @@
+page-report-bet {
+    .toggle-children {
+        margin: 8px 10px;
+    }
+    .list {
+        .item {
+            .item-inner {
+                padding-right: 0;
+               
+            }
+        }
+        .grid {
+            padding: 0;
+            .row {
+                padding: 2px 10px;
+                &.partner-title {
+                    background: $color-blue;
+                    color: $color-white;
+                    .col {
+                        padding: 4px !important;
+                    }
+                }
+                &.border {
+                    border-bottom: 1px solid $color-graylight;
+                    padding-bottom: 5px;
+                    margin-bottom: 6px;
+                }
+                .col {
+                    span {
+                        font-weight: bold;
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+{
+  "Unauthorized request": "Please Login Again",
+  "app.btn.login": "Login",
+  "app.btn.change_password": "Change Password",
+  "app.btn.edit": "Edit",
+  "app.btn.cancel": "Cancel",
+  "app.btn.ok": "Ok",
+  "app.btn.apply": "Apply",
+  "app.btn.detail": "Detail",
+  "app.btn.save": "Save",
+  "app.btn.addnew": "Add New",
+  "app.btn.addpartner": "Add Partner",
+  "app.btn.product_permission": "Product Permission",
+  "app.btn.withdraw": "Withdraw",
+  "app.btn.deposit": "Deposit",
+  "app.btn.only_myplayers": "Only My PLayers",
+  "app.btn.cancel_ticket": "Cancel Ticket",
+  "app.btn.approve": "Approve",
+  "app.btn.search": "Search",
+  "app.btn.searchplayer": "Search Player",
+  "app.btn.deposit": "Add",
+  "app.btn.withdraw": "Remove",
+  "page.account.generalreport.totalin": "Total deposits",
+  "page.account.generalreport.totalcount": "Total payouts",
+  "page.account.generalreport.total": "Total",
+  "page.account.tab.general_report": "General Report",
+  "app.tickets.status.open": "Open",
+  "app.tickets.status.won": "Won",
+  "app.tickets.status.void": "Void",
+  "app.tickets.status.lost": "Lost",
+
+
+  "app.menu.root": "Root",
+  "app.menu.account": "Account",
+  "app.menu.partners": "Partners",
+  "app.menu.players": "Players",
+  "app.menu.tickets": "Tickets",
+
+  "app.menu.reports.depositwithdraw": "Deposit / Withdraw",
+  "app.menu.reports": "Reports",
+  "app.menu.reports.generalreport": "General Reports",
+  "app.menu.reports.betreport": "Bet Reports",
+  "app.menu.reports.playerreport": "Player Reports",
+  "app.menu.reports.casinoreport": "Casino Reports",
+  "app.menu.reports.livecasinoreport": "Live Casino Reports",
+  "app.menu.reports.tombalareport": "Tombala Reports",
+
+  "app.menu.other": "Other",
+  "app.menu.logout": "logout",
+
+  "app.general.text.loading": "Refreshing...",
+
+
+  "app.general.text.filtre": "Filtre",
+  "app.general.text.id": "ID",
+  "app.general.text.partner": "Partner",
+  "app.general.text.player": "Player",
+  "app.general.text.transaction_date": "Transaction Date",
+  "app.general.text.transaction_type": "Transaction Type",
+  "app.general.text.transaction_direction": "Transation Direction",
+  "app.general.text.amount": "Amount ",
+  "app.general.text.lastbalance": "Last Balance",
+  "app.general.text.balance": "Balance",
+  "app.general.text.currency": "Currency",
+  "app.general.text.username": "Username",
+  "app.general.text.credit": "Credit",
+  "app.general.text.ticket_count": "Ticket count",
+  "app.general.text.deposit_amount": "Deposit Amount",
+  "app.general.text.hold": "Profit",
+  "app.general.text.profit": "Profit",
+  "app.general.text.waiting_ticket": "Wating Ticket",
+  "app.general.text.startdate": "Start Date",
+  "app.general.text.enddate": "End Date",
+  "app.general.text.minamount": "Min. Stake",
+  "app.general.text.maxamount": "Max. Stake",
+  "app.general.text.minpayout": "Min. Payout",
+  "app.general.text.maxpayout": "Max. Payout",
+  "app.general.text.status": "Status",
+  "app.general.text.live": "Live",
+  "app.general.text.direct": "Direct",
+  "app.general.text.fee": "Fee",
+
+  "app.general.text.bet": "Bet",
+  "app.general.text.livecasino": "Live Casino",
+  "app.general.text.slot": "Slot",
+  "app.general.text.tombala": "Tombala",
+  "app.general.text.total": "Total",
+
+
+
+  "app.general.text.deposit": "Deposit",
+  "app.general.text.withdraw": "Withdraw",
+
+  "app.general.text.incomeexpense": "Income/Expense",
+  "app.general.text.transactiontype": "Transactin Type",
+
+  "app.general.text.only_live": "Only Live",
+  "app.general.text.only_prematch": "Only Prematch",
+
+  "app.general.text.all": "All",
+  "app.general.text.allplayer": "All Players",
+  "app.general.text.only_myplayer": "Only My Players",
+
+  "app.general.text.date": "Date",
+  "app.general.text.payout": "Payout",
+
+  "app.general.text.login_date": "Login Date",
+  "app.general.text.ip": "IP",
+
+  "app.general.message.success": "Success",
+
+  "app.general.label.id": "ID",
+  "app.general.label.name": "Name",
+  "app.general.label.name_msg": "Enter Username",
+  "app.general.label.surname": "Surname",
+  "app.general.label.surname_msg": "Enter Surmane",
+  "app.general.label.email": "Email",
+  "app.general.label.email_msg": "Enter Your Email",
+  "app.general.label.username": "Username",
+  "app.general.label.username_msg": "Enter Username",
+  "app.general.label.credit": "Credit",
+  "app.general.label.credit_msg": "Enter Credit",
+  "app.general.label.active": "Active",
+  "app.general.label.password": "Password",
+  "app.general.label.password_msg": "Enter Password",
+
+  "app.general.label.partneraccess": "Partner Can Add?",
+
+  "app.options.item.all": "All",
+  "app.options.item.only_active": "Only Active",
+  "app.options.item.only_passive": "Only passive",
+
+
+  "page.login.title": "Partner Login",
+  "page.login.label.username": "Username",
+  "page.login.label.username.error": "Enter Username",
+  "page.login.label.password": "Password",
+  "page.login.label.password.error": "Password Error",
+  "page.login.label.language": "Language",
+
+
+  "page.account.title": "My Account",
+  "page.account.tab.account_info": "Account Info",
+  "page.account.tab.past_logins": "Past Login",
+  "page.account.tab.transaction_hisorty": "Trans. Historty",
+  "page.account.tab.tickets": "Tickets",
+
+  "page.account.table.id": "ID",
+  "page.account.table.siteid": "Site ID",
+  "page.account.table.sitename": "Site",
+  "page.account.table.username": "Username",
+  "page.account.table.name": "Name",
+  "page.account.table.surname": "Surname",
+  "page.account.table.email": "Email",
+  "page.account.table.partner": "Partner",
+  "page.account.table.active": "Active",
+  "page.account.table.currency": "Currency",
+  "page.account.table.language": "Language",
+  "page.account.table.lastlogin": "Last Login",
+  "page.account.table.credit": "Credit",
+  "page.account.table.balance": "Balance",
+
+
+  "page.account.loginhistory.browser": "browser",
+  "page.account.loginhistory.device": "device",
+  "page.account.loginhistory.os": "Os",
+  "page.account.loginhistory.ip": "Ip",
+  "page.account.loginhistory.date": "loginhistory Date",
+  "page.account.loginhistory.partnerId": "Partner Id",
+  "page.account.loginhistory.active": "Active",
+
+  "page.changepassword.title": "Change Password",
+  "page.changepassword.label.newpassword": "New Password",
+
+  "app.partners.title": "Partners",
+  "app.partners.title_edit": "Edit Partners",
+  "app.partners.title.producut_permitions": "Product Permitions",
+
+
+
+  "app.players.title": "Player Title",
+  "app.players.title.deposit_withdraw": "Players",
+  "app.players.title.edit": "Edit Players",
+  "app.players.title.add": "Add PLayer",
+
+
+
+  "app.generalreports.title": "General Reports",
+  "app.betreports.title": "Bet Report",
+  "app.casinoreport.title": "Casino Report",
+  "app.livecasinoreport.title": "Casino Report",
+  "app.playerreport.title": "Player Report",
+  "app.tombalareport.title": "Tombala Report",
+
+
+  "app.tickets.title": "Tickets",
+  "app.tickets.title.detail": "Tickets Detail",
+  "app.tickets.title.ticketinfo": "Ticket Info",
+  "app.tickets.label.ticketno": "Ticket No",
+  "app.tickets.label.partner": "Partner",
+  "app.tickets.label.ticket_date": "Ticket Date",
+  "app.tickets.label.player": "Player",
+  "app.tickets.label.amount": "Amount",
+  "app.tickets.label.ip": "Ip",
+  "app.tickets.label.country": "Country",
+  "app.tickets.label.stakeperbet": "Stake Perbet",
+  "app.tickets.label.currency": "Currency",
+  "app.tickets.label.payout": "Payout",
+  "app.tickets.label.status": "Status",
+  "app.tickets.label.system": "System",
+
+  "app.tickets.title.teams": "Teams",
+  "app.tickets.title.date": "Date",
+  "app.tickets.title.live": "Live",
+  "app.tickets.title.oddsvalue": "Odds Value",
+  "app.tickets.title.bet": "Bet",
+  "app.tickets.title.wager": "Wager",
+
+
+  "app.ticket.cancel.title": "Do you approve this action?",
+  "app.ticket.cancel.desc": "This ticket you selected will be canceled / refunded. Do you confirm?",
+
+
+  "app.general.text.spin_count": "Spin Count",
+  "app.general.text.turnover": "Hold",
+  "app.general.text.cardcount": "Card Count"
+
+}

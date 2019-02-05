@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>{{'app.partners.title.producut_permitions'|translate}}</ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+                <span ion-text color="primary" showWhen="ios">{{'app.btn.cancel'|translate}}</span>
+                <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-buttons end>
+            <button ion-button (click)="dismiss()" strong>{{'app.btn.apply'|translate}}</button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+
+        <ion-item *ngFor="let row of productPermits">
+            <ion-label>{{row.Name}}</ion-label>
+            <ion-checkbox [(ngModel)]="row.Permitted" (ionChange)="savePermition(row)"></ion-checkbox>
+        </ion-item>
+
+    </ion-list>
+</ion-content>

@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{'app.tickets.title'|translate}}</ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only (click)="presentFilter()">
+                <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content refreshingText="{{'app.general.text.loading'|translate}}"></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-list #ticketList *ngIf="tickets" class="ticket-list zebra medium-font">
+        <ion-list-header no-padding>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-3 text-left>{{'app.general.text.player'|translate}}</ion-col>
+                    <ion-col col-4 text-left>{{'app.general.text.date'|translate}}</ion-col>
+                    <ion-col col-3 text-left>{{'app.general.text.amount'|translate}}</ion-col>
+                    <ion-col col-2 text-center>{{'app.general.text.live'|translate}}</ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list-header>
+
+        <button *ngFor="let row of tickets" no-padding ion-item [attr.status]="'st'+ row.Status | lowercase" (click)="goDetail(row.PlayerId, row.Id)">
+            <ion-grid no-padding>
+                <ion-row>
+                    <ion-col col-3 text-left class="ellipsis">{{row.Player}}</ion-col>
+                    <ion-col col-4 text-left>{{row.TicketDate|gettime}}</ion-col>
+                    <ion-col col-3 text-left>{{row.Stake|number:'.2-2'}}{{row.Currency|currencyIcon}}</ion-col>
+                    <ion-col col-2 text-right><span class="live-icon" *ngIf="row.IsLive"><img src="/assets/img/icon-live-red.gif" /></span></ion-col>
+                </ion-row>
+            </ion-grid>                
+        </button>
+
+        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">
+            <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+
+    </ion-list>
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'app.players.title.add'|translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+    <form #playerForm="ngForm" novalidate>
+
+        <ion-list class="form-list">
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.name'|translate}}</ion-label>
+                <ion-input [(ngModel)]="player.name" type="text" name="name" #name="ngModel" spellcheck="false" autocapitalize="off" required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="name.valid || submitted == false" color="danger" padding-left>{{'app.general.label.name_msg'|translate}}</p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.surname'|translate}}</ion-label>
+                <ion-input [(ngModel)]="player.surname" type="text" name="surname" #surname="ngModel" spellcheck="false" autocapitalize="off" required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="surname.valid || submitted == false" color="danger" padding-left>{{'app.general.label.surname_msg'|translate}}</p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.username'|translate}}</ion-label>
+                <ion-input [(ngModel)]="player.username" type="text" #username="ngModel" name="username" spellcheck="false" autocapitalize="off"required></ion-input>                
+            </ion-item>
+            <p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.username_msg'|translate}}
+            </p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.password'|translate}}</ion-label>
+                <ion-input [(ngModel)]="player.password" type="text" #password="ngModel" name="password" spellcheck="false" autocapitalize="off" required></ion-input>
+            </ion-item>
+
+            <p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.password_msg'|translate}}
+            </p>
+ 
+            <div text-center padding>
+                <button ion-button type="button" (click)="generateUsername(5)">Generate User</button>
+                <button ion-button type="submit" (click)="savePlayer(playerForm)" padding text-center>{{'app.btn.save'|translate}}</button>
+            </div>
+
+        </ion-list>
+    </form>
+
+</ion-content>

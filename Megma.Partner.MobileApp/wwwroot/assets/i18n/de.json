@@ -1,0 +1,229 @@
+{
+  "Unauthorized request": "Bitte wieder einloggen",
+  "app.btn.login": "Login",
+  "app.btn.change_password": "Passwort ändern",
+  "app.btn.edit": "Bearbeiten",
+  "app.btn.cancel": "Abbrechen",
+  "app.btn.ok": "OK",
+  "app.btn.apply": "Ausführen",
+  "app.btn.detail": "Details",
+  "app.btn.save": "Speichern",
+  "app.btn.addnew": "Neu hinzufügen",
+  "app.btn.addpartner": "Partner hinzufügen",
+  "app.btn.product_permission": "Berechtigung",
+  "app.btn.withdraw": "Auszahlung",
+  "app.btn.deposit": "Einzahlung",
+  "app.btn.only_myplayers": "Nur meine Spieler",
+  "app.btn.cancel_ticket": "Ticket Stornieren",
+  "app.btn.approve": "Genehmigen",
+
+  "app.btn.searchplayer": "Suche Spieler",
+  "app.tickets.status.open": "Offen",
+  "app.tickets.status.won": "Gewonnen",
+  "app.tickets.status.void": "Storniert",
+  "app.tickets.status.lost": "Verloren",
+
+  "app.menu.root": "Root",
+  "app.menu.account": "Mein Konto",
+  "app.menu.partners": "Partner",
+  "app.menu.players": "Spieler",
+  "app.menu.tickets": "Tickets",
+  "page.account.generalreport.totalin": "Summe Einzahlungen",
+  "page.account.generalreport.totalcount": "Summe Auszahlungen",
+  "page.account.generalreport.total": "Gesamt",
+  "page.account.tab.general_report": "Allgemeiner Bericht",
+  "app.btn.search": "Suche",
+
+  "app.menu.reports": "Abrechnungen",
+  "app.menu.reports.generalreport": "Allgemeine Abrechnung",
+  "app.menu.reports.betreport": "Wetten Abrechnung",
+  "app.menu.reports.playerreport": "Spieler Abrechnung",
+  "app.menu.reports.casinoreport": "Casino Abrechnung",
+  "app.menu.reports.livecasinoreport": "Live Casino Abrechnung",
+  "app.menu.reports.tombalareport": "Tombala Abrechnung",
+
+  "app.menu.other": "Andere",
+  "app.menu.logout": "Logout",
+
+  "app.btn.withdraw": "Abheben",
+  "app.btn.deposit": "Einzahlung",
+
+  "app.menu.reports.depositwithdraw": "Einzahlung / Abheben",
+
+  "app.general.text.filtre": "Filter",
+  "app.general.text.id": "ID",
+  "app.general.text.partner": "Partner",
+  "app.general.text.player": "Spieler",
+  "app.general.text.transaction_date": "Transaktion Datum",
+  "app.general.text.transaction_type": "Transaktionsart",
+  "app.general.text.transaction_direction": "Transaktionsrichtung",
+  "app.general.text.amount": "Betrag",
+  "app.general.text.lastbalance": "Vorherige Guthaben",
+  "app.general.text.balance": "Neues Guthaben",
+  "app.general.text.currency": "Währung",
+  "app.general.text.username": "Benutzername",
+  "app.general.text.credit": "Kredit",
+  "app.general.text.ticket_count": "Anzahl Tickets",
+  "app.general.text.deposit_amount": "Einzahlung",
+  "app.general.text.hold": "Hold",
+  "app.general.text.profit": "Hold",
+  "app.general.text.waiting_ticket": "Offene Tickets",
+  "app.general.text.startdate": "Anfangsdatum",
+  "app.general.text.enddate": "Enddatum",
+  "app.general.text.minamount": "Min. Einsatz",
+  "app.general.text.maxamount": "Max. Einsatz",
+  "app.general.text.minpayout": "Min. Auszahlung",
+  "app.general.text.maxpayout": "Max. Auszahlung",
+  "app.general.text.status": "Status",
+  "app.general.text.live": "Live",
+  "app.general.text.direct": "Direkt",
+  "app.general.text.fee": "Gebühr",
+
+  "app.general.text.bet": "Wette",
+  "app.general.text.livecasino": "Live Casino",
+  "app.general.text.slot": "Slot",
+  "app.general.text.tombala": "Tombala",
+  "app.general.text.total": "Gesamt",
+
+
+  "app.general.text.deposit": "Einzahlung",
+  "app.general.text.withdraw": "Auszahlung",
+
+  "app.general.text.incomeexpense": "Erträge / Aufwendungen",
+  "app.general.text.transactiontype": "Transaktion",
+
+  "app.general.text.only_live": "Nur Live",
+  "app.general.text.only_prematch": "Nur Sportwetten",
+
+  "app.general.text.all": "Alle",
+  "app.general.text.allplayer": "Alle Spieler",
+  "app.general.text.only_myplayer": "Nur meine Spieler",
+
+  "app.general.text.date": "Datum",
+  "app.general.text.payout": "Auszahlung",
+
+  "app.general.text.login_date": "Login Datum",
+  "app.general.text.ip": "IP",
+
+  "app.general.message.success": "Aktion erfolgreich gespeichert",
+
+  "app.general.label.id": "ID",
+  "app.general.label.name": "Vorname",
+  "app.general.label.name_msg": "Vorname eingeben",
+  "app.general.label.surname": "Nachname",
+  "app.general.label.surname_msg": "Nachname eingeben",
+  "app.general.label.email": "Email",
+  "app.general.label.email_msg": "Email eingeben",
+  "app.general.label.username": "Benutzername",
+  "app.general.label.username_msg": "Benutzername eingeben",
+  "app.general.label.credit": "Kredit",
+  "app.general.label.credit_msg": "Kredit eingeben",
+  "app.general.label.active": "Aktiv",
+  "app.general.label.password": "Passwort",
+  "app.general.label.password_msg": "Passwort eingeben",
+
+  "app.general.label.partneraccess": "Partner kann hinzufügen?",
+
+
+
+  "app.options.item.all": "Alle",
+  "app.options.item.only_active": "Nur Aktive",
+  "app.options.item.only_passive": "Nur Passive",
+
+
+  "page.login.title": "Partner Login",
+  "page.login.label.username": "Benutzername",
+  "page.login.label.username.error": "Benuzternamen eingebn",
+  "page.login.label.password": "Passwort",
+  "page.login.label.password.error": "Passwort eingeben",
+  "page.login.label.language": "Sprache",
+
+
+  "page.account.title": "Mein Konto",
+  "page.account.tab.account_info": "Kontodaten",
+  "page.account.tab.past_logins": "Login History",
+  "page.account.tab.transaction_hisorty": "Trans. History",
+  "page.account.tab.tickets": "Tickets",
+
+  "page.account.table.id": "ID",
+  "page.account.table.siteid": "Webseiten ID",
+  "page.account.table.sitename": "Webseite",
+  "page.account.table.username": "Benutzername",
+  "page.account.table.name": "Vorname",
+  "page.account.table.surname": "Nachname",
+  "page.account.table.email": "Email",
+  "page.account.table.partner": "Partner",
+  "page.account.table.active": "Aktiv",
+  "page.account.table.currency": "Währung",
+  "page.account.table.language": "Sprache",
+  "page.account.table.lastlogin": "Letzer Login",
+  "page.account.table.credit": "Kredit",
+  "page.account.table.balance": "Guthaben",
+
+
+  "page.account.loginhistory.browser": "Browser",
+  "page.account.loginhistory.device": "Gerät",
+  "page.account.loginhistory.os": "OS",
+  "page.account.loginhistory.ip": "IP",
+  "page.account.loginhistory.date": "Login Datum",
+  "page.account.loginhistory.partnerId": "Partner ID",
+  "page.account.loginhistory.active": "Aktiv",
+
+  "page.changepassword.title": "Passwort ändern",
+  "page.changepassword.label.newpassword": "Neues Passwort",
+
+  "app.partners.title": "Partner",
+  "app.partners.title_edit": "Partner Bearbeiten",
+  "app.partners.title.producut_permitions": "Berechtigungen",
+
+
+
+  "app.players.title": "Spieler",
+  "app.players.title.deposit_withdraw": "Spieler",
+  "app.players.title.edit": "Spieler bearbeiten",
+  "app.players.title.add": "Spieler hinzufügen",
+
+
+
+  "app.generalreports.title": "Allgemeine Abrechnung",
+  "app.betreports.title": "Wetten Abrechnung",
+  "app.casinoreport.title": "Casino Abrechnung",
+  "app.livecasinoreport.title": "Live Casino Abrechnung",
+  "app.playerreport.title": "Spieler Abrechnung",
+  "app.tombalareport.title": "Tombala Abrechnung",
+
+  "app.general.text.loading": "Aktualisieren...",
+
+
+  "app.tickets.title": "Tickets",
+  "app.tickets.title.detail": "Ticket Details",
+  "app.tickets.title.ticketinfo": "Ticket Info",
+  "app.tickets.label.ticketno": "Ticketnr",
+  "app.tickets.label.partner": "Partner",
+  "app.tickets.label.ticket_date": "Ticket Datum",
+  "app.tickets.label.player": "Spieler",
+  "app.tickets.label.amount": "Betrag",
+  "app.tickets.label.ip": "IP",
+  "app.tickets.label.country": "Land",
+  "app.tickets.label.stakeperbet": "Betrag pro Wette",
+  "app.tickets.label.currency": "Währung",
+  "app.tickets.label.payout": "Auszahlung",
+  "app.tickets.label.status": "Status",
+  "app.tickets.label.system": "System",
+
+  "app.tickets.title.teams": "Mannschaften",
+  "app.tickets.title.date": "Datum",
+  "app.tickets.title.live": "Live",
+  "app.tickets.title.oddsvalue": "Quote",
+  "app.tickets.title.bet": "Wette",
+  "app.tickets.title.wager": "Wettart",
+
+
+  "app.ticket.cancel.title": "Genehmigen Sie diese Aktion?",
+  "app.ticket.cancel.desc": "Dieses Ticket, das Sie ausgewählt haben, wird storniert / zurückerstattet. Bestätigst du?",
+
+
+  "app.general.text.spin_count": "Spin Count",
+  "app.general.text.turnover": "Halt",
+  "app.general.text.cardcount": "Kartenzähler"
+}

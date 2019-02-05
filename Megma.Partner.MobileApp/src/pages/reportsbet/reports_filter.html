@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">{{'app.btn.cancel'|translate}}</button>
+        </ion-buttons>
+
+        <ion-title>{{'app.general.text.filtre'|translate}}</ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="applyFilters()" strong>{{'app.btn.apply'|translate}}</button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+    <ion-list>
+        <ion-item>
+            <ion-label>{{'app.general.text.startdate'|translate}}:</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="filterSettings.startDate" cancelText="{{'app.btn.cancel'|translate}}" doneText="{{'app.btn.ok'|translate}}"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.text.enddate'|translate}}:</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="filterSettings.endDate" cancelText="{{'app.btn.cancel'|translate}}" doneText="{{'app.btn.ok'|translate}}"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.label.active'|translate}}:</ion-label>
+            <ion-select [(ngModel)]="filterSettings.onlyActive">
+                <ion-option value="" selected>{{'app.options.item.all'|translate}}</ion-option>
+                <ion-option value="true">{{'app.options.item.only_active'|translate}}</ion-option>
+                <ion-option value="false">{{'app.options.item.only_passive'|translate}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+
+    </ion-list>
+
+
+</ion-content>

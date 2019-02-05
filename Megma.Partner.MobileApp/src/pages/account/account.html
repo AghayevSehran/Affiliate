@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{'page.account.title'|translate}}</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar>
+        <ion-segment [(ngModel)]="userSegment">
+            <ion-segment-button value="AccountInfo"><span [translate]="'page.account.tab.account_info'"></span></ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+    <div class="page-content" [ngSwitch]="userSegment">
+
+        <div text-center *ngIf="user">
+
+
+            <ion-grid *ngSwitchCase="'AccountInfo'">
+                <ion-row wrap>
+                    <ion-col col-50><img src="http://www.gravatar.com/avatar?d=mm&s=140" alt="avatar"></ion-col>
+                    <ion-col col-50 text-center>
+                        <h3>{{user.Name}}</h3>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+            <ion-list class="floated-list medium-font" *ngSwitchCase="'AccountInfo'">
+                <ion-item>
+                    <label [translate]="'page.account.table.id'"></label>:
+                    <span>{{user.Id}}</span>
+                </ion-item>
+                <ion-item>
+                    <label [translate]="'page.account.table.sitename'"></label>:
+                    <span>{{user.SiteName}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.username'"></label>:
+                    <span>{{user.Username}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.name'"></label>:
+                    <span>{{user.Name}}</span>
+                </ion-item>
+                <ion-item>
+                    <label [translate]="'page.account.table.currency'"></label>:
+                    <span>{{user.Currency}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.language'"></label>:
+                    <span>{{user.Language}}</span>
+                </ion-item>
+
+                <ion-item>
+                    <label [translate]="'page.account.table.lastlogin'"></label>:
+                    <span>{{user.LastLogin | date:'dd.MM.yyyy HH:mm:ss'}}</span>
+                </ion-item>
+
+            </ion-list>
+
+
+            <ion-list inset *ngSwitchCase="'AccountInfo'">
+                <button ion-button color="dark" (click)="changePassword()" icon-left>
+                    <ion-icon name="key"></ion-icon>{{'app.btn.change_password' | translate}}
+                </button>
+            </ion-list>
+
+
+        </div>
+    </div>
+
+
+</ion-content>

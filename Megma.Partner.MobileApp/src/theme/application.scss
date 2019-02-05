@@ -1,0 +1,247 @@
+
+$appcolors: ( bgyellow: #eccdab);
+//colors variable section
+$color-white: white;
+$color-gray: gray;
+$color-graydark: #333;
+$color-gray: #666;
+$color-grayborder: #999;
+$color-grays: #eee;
+$color-graylight: #ccc;
+$color-border:#dcdbdb;
+$color-alto: #dbdbdb;
+$color-black: black;
+$color-blue:#2a7394;
+$color-darkblue:#126F8E;
+$color-yellow:#ef8107;
+$color-green: #40986e;
+$color-red: #c70000;
+$color-red-light: #e4463d;
+$color-success: #8EAF00;
+$color-info: #1284C0;
+$color-error: #BA191B;
+
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.elliptis {
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 12px !important;
+    display: block;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+
+/* Toolbar Title */
+.toolbar-title{
+    &.toolbar-title-ios{
+        font-size: 4vw;
+    }
+    font-size: 4vw;
+}
+
+/* Toolbar buttons */
+.bar-button{
+    .button-inner {
+        font-size: 4vw;
+    }
+}
+
+/* Login Form */
+form{
+    &.no-logo{
+        margin-top: 15vh; 
+    }
+} 
+
+
+/* Left Side */
+
+.pinolo-leftside-logo {
+    width: 110px;
+    margin: 5px 0 0 0;
+}
+
+
+/* Forms */
+.form-error {
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+/* Lists */
+
+ion-list {
+
+    &.nomargin{ margin:0 !important; }
+    &.zebra {
+        button.item.item-block {
+            &:nth-child(odd) {
+                background: #F9F9F9 !important;
+            }
+        }
+        .item-wrapper {
+            &:nth-child(even) {
+                .item.item-block {
+                    background: #F9F9F9 !important;
+                }
+            }
+        }
+    }
+    .item.item-block,
+    .item.item-block.not-ios {
+        &.down {
+            color: red !important;
+            .note {
+                color: red !important;
+            }
+        }
+        &.up {
+            color: green !important;
+            .note {
+                color: green !important;
+            }
+        }
+    }
+    &.form-list {
+        .item.item-block {
+            padding: 0;
+            .item-inner {
+                padding: 0 10px;
+            }
+            .label {
+                width: 120px !important;
+            }
+        }
+    }
+}
+
+.floated-list {
+    label {
+        float: left;
+        min-width: 40%;
+    }
+    span {
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}
+
+.normal-font {
+    .label {
+        font-size: 3vw !important;
+    }
+}
+
+.small-font {
+    .label {
+        font-size: 3vw !important;
+        margin: 11px 8px 11px 8px !important;
+    }
+}
+
+.medium-font {
+    .label {
+        font-size: 3.7vw !important;
+    }
+    .grid {
+        .col {
+            padding: 5px !important;
+            &.down {
+                color: red !important;
+            }
+            &.up {
+                color: green !important;
+            }
+        }
+    }
+}
+
+
+/* Grid */
+
+ion-grid.grid {
+    .row {
+        &.down {
+            color: red !important;
+            .note {
+                color: red !important;
+            }
+        }
+        &.up {
+            color: green !important;
+            .note {
+                color: green !important;
+            }
+        }
+        ion-col{
+            &.down {
+                color: red !important;
+                .note {
+                    color: red !important;
+                }
+            }
+            &.up {
+                color: green !important;
+                .note {
+                    color: green !important;
+                }
+            }
+        }
+    }
+    &.medium {
+        .item-inner {
+            font-size: 11px !important;
+        }
+        .filterbtn.button-ios {
+            height: 2.3em !important;
+        }
+        .col {
+            &.down {
+                color: red !important;
+                .note {
+                    color: red !important;
+                }
+            }
+            &.up {
+                color: green !important;
+                .note {
+                    color: green !important;
+                }
+            }
+        }
+    }
+}
+
+
+/* Item Note */
+
+ion-note.color-dark {
+    color: #333;
+}
+
+
+/* Toast Messages */
+
+ion-toast {
+    &.danger {
+        .toast-wrapper {
+            // background: rgba(172, 17, 1, .9) !important;
+            background: rgba(42, 115, 148, .9) !important;
+        }
+    }
+    &.success {
+        .toast-wrapper {
+            background: rgba(2, 119, 158, .9) !important;
+        }
+    }
+}

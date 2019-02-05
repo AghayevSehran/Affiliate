@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-navbar>
+
+        <ion-title>{{'app.btn.addpartner'|translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <form #partnerForm="ngForm" novalidate>
+
+        <ion-list class="form-list">
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.name'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.name" type="text" name="name" #name="ngModel" spellcheck="false" autocapitalize="off" required></ion-input>
+            </ion-item>
+
+            <p ion-text [hidden]="name.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.name_msg'|translate}}
+            </p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.username'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.username" type="text" #username="ngModel" name="username" spellcheck="false" autocapitalize="off"
+                    required></ion-input>
+            </ion-item>
+
+            <p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.username_msg'|translate}}
+            </p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.password'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.password" type="text" #password="ngModel" name="password" spellcheck="false" autocapitalize="off"
+                    required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.username_msg'|translate}}
+            </p>
+
+            <ion-item>
+                <ion-label floating primary>{{'app.general.label.credit'|translate}}</ion-label>
+                <ion-input [(ngModel)]="partner.credit" type="number" #credit="ngModel" name="credit" spellcheck="false" autocapitalize="off"
+                    required></ion-input>
+            </ion-item>
+            <p ion-text [hidden]="credit.valid || submitted == false" color="danger" padding-left>
+                {{'app.general.label.credit_msg'|translate}}
+            </p>
+
+            <ion-item>
+                <ion-label>{{'app.general.label.active'|translate}}</ion-label>
+                <ion-checkbox [(ngModel)]="partner.active" name="active"></ion-checkbox>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>{{'app.general.label.partneraccess'|translate}}</ion-label>
+                <ion-checkbox [(ngModel)]="partner.CanCreatePartner" name="cancreatepartner"></ion-checkbox>
+            </ion-item>
+
+
+            <div text-center padding>
+                <button ion-button type="submit" (click)="savePartner(partnerForm)" padding text-center>{{'app.btn.save'|translate}}</button>
+            </div>
+
+        </ion-list>
+    </form>
+
+</ion-content>

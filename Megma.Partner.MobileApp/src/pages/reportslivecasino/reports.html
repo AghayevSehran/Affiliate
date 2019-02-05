@@ -1,0 +1,55 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{'app.menu.reports.livecasinoreport'|translate}}</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="presentFilter()">
+                <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-list class="normal-font">
+        <!-- <button md-button (click)="reportsTree.treeModel.expandAll()">Expand</button> -->
+
+        <tree-root #reportsTree [nodes]="nodes" [focused]="true" [options]="options">
+
+            <ng-template #treeNodeTemplate let-node let-index="index">
+
+                <ion-list class="normal-font nomargin">
+                    <ion-item>
+                        <div class="note-item" [ngClass]="{'disabled':!node.data.Active}">
+                            <ion-grid>
+                                <ion-row class="partner-title">
+                                    <ion-col text-center>{{ node.data.Username }}</ion-col>
+                                </ion-row>
+                                <ion-row class="border">
+                                    <ion-col col-4 text-left><span>{{'app.general.text.credit'|translate}}</span><br />{{ node.data.Credit|number:'.2-2'}}</ion-col>
+                                    <ion-col col-4 text-left><span>{{'app.general.text.amount'|translate}}</span><br />{{ node.data.Balance|number:'.2-2'}}</ion-col>
+                                    <ion-col col-4 text-left><span>{{'app.general.text.deposit_amount'|translate}}</span><br />{{ node.data.Turnover|number:'.2-2'}}</ion-col>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-col col-6 text-left><span>{{'app.general.text.payout'|translate}}</span><br />{{ node.data.Payout|number:'.2-2'}}</ion-col>
+                                    <ion-col col-6 text-left><span>{{'app.general.text.profit'|translate}}</span><br />{{ node.data.Profit|number:'.2-2'}}</ion-col>
+                                </ion-row>
+
+                            </ion-grid>
+                        </div>
+                    </ion-item>
+                </ion-list>
+
+
+            </ng-template>
+
+        </tree-root>
+
+    </ion-list>
+
+</ion-content>

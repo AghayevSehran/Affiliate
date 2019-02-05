@@ -1,0 +1,108 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">{{'app.btn.cancel'|translate}}</button>
+        </ion-buttons>
+
+        <ion-title>{{'app.general.text.filtre'|translate}}</ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="applyFilters()" strong>{{'app.btn.apply'|translate}}</button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+    <ion-list>
+        <ion-item>
+            <ion-label>{{'app.tickets.label.ticketno'|translate}}:</ion-label>
+            <ion-input [(ngModel)]="filterSettings.ticketId" type="number"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label>{{'app.general.text.startdate'|translate}}:</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="filterSettings.startDate" cancelText="{{'app.btn.cancel'|translate}}" doneText="{{'app.btn.ok'|translate}}"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.text.enddate'|translate}}:</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="filterSettings.endDate" cancelText="{{'app.btn.cancel'|translate}}" doneText="{{'app.btn.ok'|translate}}"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.text.player'|translate}}:</ion-label>
+            <ion-input [(ngModel)]="filterSettings.username" type="text"></ion-input>
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>{{'app.general.text.minamount'|translate}}:</ion-label>
+                        <ion-input [(ngModel)]="filterSettings.minStake" type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>{{'app.general.text.maxamount'|translate}}:</ion-label>
+                        <ion-input [(ngModel)]="filterSettings.maxStake" type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>{{'app.general.text.minpayout'|translate}}:</ion-label>
+                        <ion-input [(ngModel)]="filterSettings.minPayout" type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>{{'app.general.text.maxpayout'|translate}}:</ion-label>
+                        <ion-input [(ngModel)]="filterSettings.maxPayout" type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+        <ion-item>
+            <ion-label>{{'app.general.text.status'|translate}}:</ion-label>
+            <ion-select [(ngModel)]="filterSettings.status">
+                <ion-option value="">{{'app.general.text.all'|translate}}</ion-option>
+                <ion-option value="21">{{'app.tickets.status.open'|translate}}</ion-option>
+                <ion-option value="23">{{'app.tickets.status.won'|translate}}</ion-option>
+                <ion-option value="24">{{'app.tickets.status.void'|translate}}</ion-option>
+                <ion-option value="25">{{'app.tickets.status.lost'|translate}}</ion-option>
+                <ion-option value="20">{{'app.tickets.status.waiting'|translate}}</ion-option>
+                <ion-option value="22">{{'app.tickets.status.cancel'|translate}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{'app.general.text.live'|translate}}:</ion-label>
+            <ion-select [(ngModel)]="filterSettings.live">
+                <ion-option value="">{{'app.general.text.all'|translate}}</ion-option>
+                <ion-option value="true">{{'app.general.text.only_live'|translate}}</ion-option>
+                <ion-option value="false">{{'app.general.text.only_prematch'|translate}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label>{{'app.general.text.direct'|translate}}:</ion-label>
+            <ion-select [(ngModel)]="filterSettings.direct">
+                <ion-option value="">{{'app.general.text.allplayer'|translate}}</ion-option>
+                <ion-option value="true">{{'app.general.text.only_myplayer'|translate}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+
+    </ion-list>
+
+
+</ion-content>
