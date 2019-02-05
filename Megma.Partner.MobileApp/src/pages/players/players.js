@@ -34,7 +34,7 @@ var PlayersPage = /** @class */ (function () {
             start: 0,
             limit: 50,
             active: true,
-            direct: false
+            direct: true
         };
         partnerService.getPlayers(this.searchParams).then(function (response) {
             _this.players = response;
@@ -44,6 +44,9 @@ var PlayersPage = /** @class */ (function () {
             //events.unsubscribe('player:reload');
         });
     }
+    PlayersPage.prototype.isReadonly = function () {
+        return true;
+    };
     PlayersPage.prototype.reloadPage = function () {
         var _this = this;
         delete this.searchParams.component;

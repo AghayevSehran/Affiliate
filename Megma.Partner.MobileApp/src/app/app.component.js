@@ -155,7 +155,7 @@ var PartnerApp = /** @class */ (function () {
     ], PartnerApp.prototype, "nav", void 0);
     PartnerApp = __decorate([
         Component({
-            templateUrl: 'app.template1.html'
+            templateUrl: 'app.template.html'
         }),
         __metadata("design:paramtypes", [Events,
             AuthenticationService,

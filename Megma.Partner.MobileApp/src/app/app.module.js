@@ -19,10 +19,10 @@ import { PartnerApp } from './app.component';
 import { AccountPage, ModalContentPage, TransactionDetail, ChangePasswordPage } from '../pages/account/account';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
-//import { PartnersPage, NewPartnerForm, EditPartnerForm, PartnerProductPermits, ChangePartnerPasswordPage } from '../pages/partners/partners';
+import { PartnersPage, NewPartnerForm, EditPartnerForm, PartnerProductPermits, ChangePartnerPasswordPage } from '../pages/partners/partners';
 import { AuthenticationService } from '../providers/user-data';
 import { RequestService } from '../providers/request';
-//import { PartnerService } from "../providers/partner-service";
+import { PartnerService } from "../providers/partner-service";
 import { TicketService } from "../providers/tickets-service";
 import { TicketsPage, TicketsDetailPage, TicketFilterPage } from "../pages/tickets/tickets";
 import { PlayersPage, PayinPayoutModal, NewPlayerForm, PlayerDetailPage, LoginHistoryModal, ChangePlayerPasswordPage, EditPlayerForm, PlayersFilterPage, PlayerProductPermits } from "../pages/players/players";
@@ -54,11 +54,11 @@ var AppModule = /** @class */ (function () {
                 ModalContentPage,
                 ChangePasswordPage,
                 TransactionDetail,
-                //    PartnersPage,
-                //  ChangePartnerPasswordPage,
-                //  NewPartnerForm,
-                //  EditPartnerForm,
-                //   PartnerProductPermits,
+                PartnersPage,
+                ChangePartnerPasswordPage,
+                NewPartnerForm,
+                EditPartnerForm,
+                PartnerProductPermits,
                 TicketsPage,
                 TicketsDetailPage,
                 TicketFilterPage,
@@ -108,9 +108,9 @@ var AppModule = /** @class */ (function () {
                     backButtonText: ' ',
                 }, {
                     links: [
-                        //  { component: PartnersPage, name: 'PartnersPage', segment: 'partners' },
-                        //  { component: NewPartnerForm, name: 'NewPartnerForm', segment: 'partners/new-partner' },
-                        // { component: EditPartnerForm, name: 'EditPartnerForm', segment: 'partners/edit-partner/:id' },
+                        { component: PartnersPage, name: 'PartnersPage', segment: 'partners' },
+                        { component: NewPartnerForm, name: 'NewPartnerForm', segment: 'partners/new-partner' },
+                        { component: EditPartnerForm, name: 'EditPartnerForm', segment: 'partners/edit-partner/:id' },
                         { component: LoginPage, name: 'LoginPage', segment: 'login' },
                         { component: AccountPage, name: 'AccountPage', segment: 'account' },
                         { component: ChangePasswordPage, name: 'ChangePassword', segment: 'account/changepassword' },
@@ -142,11 +142,11 @@ var AppModule = /** @class */ (function () {
                 ModalContentPage,
                 ChangePasswordPage,
                 TransactionDetail,
-                //  PartnersPage,
-                //  ChangePartnerPasswordPage,
-                //   NewPartnerForm,
-                //   EditPartnerForm,
-                //  PartnerProductPermits,
+                PartnersPage,
+                ChangePartnerPasswordPage,
+                NewPartnerForm,
+                EditPartnerForm,
+                PartnerProductPermits,
                 TicketsPage,
                 TicketsDetailPage,
                 TicketFilterPage,
@@ -183,7 +183,7 @@ var AppModule = /** @class */ (function () {
                 StatusBar,
                 SplashScreen,
                 RequestService,
-                // PartnerService,
+                PartnerService,
                 TicketService,
                 ReportsService
             ]
