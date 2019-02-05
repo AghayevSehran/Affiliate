@@ -19,7 +19,6 @@ namespace Megma.Partner.MobileApp
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();
-
             host.Run();
         }
     }
