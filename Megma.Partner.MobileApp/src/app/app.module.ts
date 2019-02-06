@@ -39,6 +39,7 @@ import { GeneralReportsPage, GeneralReportFilterPage } from '../pages/reportsgen
 import { BetReportsTwoPage, ReportBetTwoFilterPage } from '../pages/reportsbettwo/reports';
 import { ReportsNew, ReportsNewFilter } from '../pages/reportsnew/reports';
 import { BrMaskerModule } from 'brmasker-ionic-3';
+import { ReportstotalComponent } from '../pages/reportstotal/reportstotal';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -80,6 +81,7 @@ enableProdMode();
         ReportLiveCasinoFilterPage,
         ReportTombalaFilterPage,
         CasinoReportsPage,
+        ReportstotalComponent,
         LiveCasinoReportsPage,
         TombalaReportsPage,
         ReportsPlayerPage,
@@ -127,6 +129,7 @@ enableProdMode();
                     { component: BetReportsTwoPage, name: 'BetReportsTwoPage', segment: 'reportstwo' },
                     { component: ReportsPlayerPage, name: 'ReportsPlayerPage', segment: 'reports/player-reports' },
                     { component: CasinoReportsPage, name: 'CasinoReportsPage', segment: 'reports/casino' },
+                    { component: ReportstotalComponent, name: 'ReportstotalComponent', segment: 'reports/totalreport' },
                     { component: LiveCasinoReportsPage, name: 'LiveCasinoReportsPage', segment: 'reports/livecasino' },
                     { component: TombalaReportsPage, name: 'TombalaReportsPage', segment: 'reports/tombala' },
                     { component: ReportsNew, name: 'ReportsNew', segment: 'reportsnew' },
@@ -169,6 +172,7 @@ enableProdMode();
         ReportCasinoFilterPage,
         ReportTombalaFilterPage,
         CasinoReportsPage,
+        ReportstotalComponent,
         LiveCasinoReportsPage,
         ReportsPlayerPage,
         ReportPlayerFilterPage,

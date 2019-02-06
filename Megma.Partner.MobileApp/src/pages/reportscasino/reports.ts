@@ -65,6 +65,7 @@ export class CasinoReportsPage {
                 return false;
             }
             this.nodes = response.Data;
+
         });
     }
 

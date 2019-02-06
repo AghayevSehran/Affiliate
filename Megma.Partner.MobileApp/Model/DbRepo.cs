@@ -883,6 +883,29 @@ namespace Megma.Partner.MobileApp.Model
 
             return response;
         }
+        public async Task<Response<IEnumerable<PlayerTotalHoldReports>>> PlayerHoldTotalResponse(string lang, int partnerId, DateTime startDate, DateTime endDate)
+        {
+            var response = new Response<IEnumerable<PlayerTotalHoldReports>>();
+            try
+            {
+                var p = new DynamicParameters();
+                p.Add("@partnerId", partnerId, DbType.Int32);
+                p.Add("@startDate", startDate, DbType.Date);
+                p.Add("@endDate", endDate.AddDays(1), DbType.Date);
+                response.Data = await this.Query<PlayerTotalHoldReports>("partners.player_total_hold_reports", p);
+                response.ErrorMessage = null;
+                response.Status = ResponseStatus.Ok;
+            }
+            catch (Exception e)
+            {
+                response.Status = ResponseStatus.Error;
+                response.ErrorMessage = e.Message;
+                response.Data = null;
+                if (e.InnerException != null) { response.ErrorMessage += e.InnerException.Message; }
+            }
+
+            return response;
+        }
         public async Task<Response<IEnumerable<PlayerCashTransactionResponse>>> PlayerCashTransactionReport(string lang, int playerId, DateTime startDate, DateTime endDate)
         {
             var response = new Response<IEnumerable<PlayerCashTransactionResponse>>();

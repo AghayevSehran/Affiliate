@@ -751,6 +751,25 @@ namespace Megma.Partner.MobileApp.Controllers
             }
         }
 
+
+        [Route("getplayerholdreports")]
+        public async Task<IActionResult> GetPlayerTotalHoldReports(DateTime startDate, DateTime endDate, bool? onlyActive)
+        {
+            try
+            {
+                var session = this.GetPartnerSession();
+                var data = await _repo.PlayerHoldTotalResponse("tr", session.Id, startDate, endDate);
+                if (data.Status == ResponseStatus.Error)
+                    throw new Exception(data.ErrorMessage);
+
+                return Ok(this.CreateSuccess(data.Data));
+            }
+            catch (Exception e)
+            {
+                return Ok(this.CreateError<string>(e.Message));
+            }
+        }
+
         [Route("getplayercashtransactions")]
         public async Task<IActionResult> GetPlayerCashTransactions(DateTime startDate, DateTime endDate, int playerId)
         {

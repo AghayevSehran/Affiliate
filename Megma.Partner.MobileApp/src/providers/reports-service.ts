@@ -116,5 +116,12 @@ export class ReportsService {
         let data = await this.requestService.get(AppSettings.API_ENDPOINT + 'getplayertombalareports?' + params);
         return data;
     };
-
+    async getPlayerTotalHoldReports(options): Promise<any> {
+        let params = new URLSearchParams();
+        for (let key in options) {
+            params.set(key, options[key])
+        }
+        let data = await this.requestService.get(AppSettings.API_ENDPOINT + 'getplayerholdreports?' + params);
+        return data;
+    };
 } 

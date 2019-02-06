@@ -27,6 +27,7 @@ export class ReportsPlayerPage {
     casinolist: any;
     livecasinolist: any;
     tombalalist: any;
+    totalReportlist: any;
     searchParams: any;
     userSegment: string = 'generalreport';
 
@@ -137,6 +138,7 @@ export class ReportsPlayerPage {
 
 
     getTombalaReports() {
+
         // let loading = this.loadingCtrl.create();
         // loading.present();
         this.partnerService.getPlayerTombalaReports(this.reportFilter).then(response => {
@@ -154,7 +156,23 @@ export class ReportsPlayerPage {
         });
     }
 
-
+    getTotalReports() {
+        // let loading = this.loadingCtrl.create();
+        // loading.present();
+        this.partnerService.getPlayerTotalHoldReports(this.reportFilter).then(response => {
+            //loading.dismiss();
+            if (response.Status === AppSettings.REST_STATUS_ERROR) {
+                let msg: string;
+                this.translateService.get(response.Message).subscribe(v => {
+                    msg = v
+                });
+                let error = this.toastCtrl.create({ message: msg, cssClass: 'danger', duration: 3000, position: 'top' });
+                error.present();
+                return false;
+            }
+            this.totalReportlist = response.Data;
+        });
+    }
     presentFilter() {
         let modal = this.modalCtrl.create(ReportPlayerFilterPage, this.reportFilter);
         modal.present();

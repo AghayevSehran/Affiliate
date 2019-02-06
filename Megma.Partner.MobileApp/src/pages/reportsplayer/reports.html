@@ -22,6 +22,8 @@
             <ion-segment-button value="casinoreport" (ionSelect)="getCasinoReports()"><span [translate]="'app.menu.reports.casinoreport'"></span></ion-segment-button>
             <ion-segment-button value="livecasinoreport" (ionSelect)="getLiveCasinoReports()"><span [translate]="'app.menu.reports.livecasinoreport'"></span></ion-segment-button>
             <ion-segment-button value="tombalareport" (ionSelect)="getTombalaReports()"><span [translate]="'app.menu.reports.tombalareport'"></span></ion-segment-button>
+            <ion-segment-button value="totalReport" (ionSelect)="getTotalReports()"><span>Reports total</span></ion-segment-button>
+
         </ion-segment>
     </ion-toolbar>
 
@@ -33,7 +35,7 @@
     <div class="page-content" [ngSwitch]="userSegment">
 
 
-        
+
         <div *ngIf="glists">
             <ion-list class="normal-font" *ngSwitchCase="'generalreport'">
                 <ion-item *ngFor="let item of glists">
@@ -47,14 +49,14 @@
                                 <ion-col col-4 text-left><span>{{'app.general.text.livecasino'|translate}}</span><br />{{ item.LiveCasino|number:'.2-2'}}</ion-col>
                                 <ion-col col-4 text-left><span>{{'app.general.text.slot'|translate}}</span><br />{{ item.Casino|number:'.2-2'}}</ion-col>
                             </ion-row>
-							<ion-row>
-								<ion-col col-4 text-left><span>{{'app.general.text.tombala'|translate}}</span><br />{{ item.Tombala|number:'.2-2'}}</ion-col>
-								<ion-col col-4 text-left><span>{{'app.general.text.total'|translate}}</span><br />{{ item.Total|number:'.2-2'}}</ion-col>
-								<ion-col col-4 text-left><span>{{'app.general.text.fee'|translate}}</span><br />{{ item.Fee|number:'.2-2'}}</ion-col>
-							</ion-row>
+                            <ion-row>
+                                <ion-col col-4 text-left><span>{{'app.general.text.tombala'|translate}}</span><br />{{ item.Tombala|number:'.2-2'}}</ion-col>
+                                <ion-col col-4 text-left><span>{{'app.general.text.total'|translate}}</span><br />{{ item.Total|number:'.2-2'}}</ion-col>
+                                <ion-col col-4 text-left><span>{{'app.general.text.fee'|translate}}</span><br />{{ item.Fee|number:'.2-2'}}</ion-col>
+                            </ion-row>
                         </ion-grid>
                     </div>
-                </ion-item> 
+                </ion-item>
             </ion-list>
         </div>
 
@@ -71,15 +73,10 @@
                             <ion-row>
                                 <ion-col col-4 text-left><span>{{'app.general.text.balance'|translate}}</span><br />{{item.Balance|number:'.2-2'}}</ion-col>
                                 <ion-col col-4 text-left><span>{{'app.general.text.deposit_amount'|translate}}</span><br />{{ item.Stake|number:'.2-2'}}</ion-col>
-                                <ion-col col-4 text-left><span>{{'app.general.text.deposit'|translate}}</span><br />{{ item.TotalDeposit }}</ion-col>
+                                <ion-col col-4 text-left><span>{{'app.general.text.deposit'|translate}}</span><br />{{ item.Name }}</ion-col>
+                                <ion-col col-3 text-left><span>{{'app.general.text.deposit'|translate}}</span><br />{{ item.TotalDeposit }}</ion-col>
                             </ion-row>
-							<ion-row>
-								<ion-col col-3 text-left><span>{{'app.general.text.payout'|translate}}</span><br />{{ item.Payout|number:'.2-2'}}</ion-col>
-								<ion-col col-3 text-left><span>{{'app.general.text.profit'|translate}}</span><br />{{ item.Hold|number:'.2-2'}}</ion-col>
-								<ion-col col-3 text-left><span>{{'app.general.text.deposit'|translate}}</span><br />{{ item.TotalDeposit }}</ion-col>
-								<ion-col col-3 text-left><span>{{'app.general.text.fee'|translate}}</span><br />{{ item.Fee|number:'.2-2'}}</ion-col>
-							</ion-row>
-                        </ion-grid>
+                            </ion-grid>
                     </div>
                 </ion-item>
             </ion-list>
@@ -135,7 +132,6 @@
         </div>
 
 
-
         <div *ngIf="tombalalist">
             <ion-list class="normal-font" *ngSwitchCase="'tombalareport'">
                 <ion-item *ngFor="let item of tombalalist">
@@ -155,6 +151,25 @@
             </ion-list>
         </div>
 
+        <div *ngIf="totalReportlist">
+            <ion-list class="normal-font" *ngSwitchCase="'totalReport'">
+                <ion-item *ngFor="let item of totalReportlist">
+                    <div class="note-item">
+                        <ion-grid>
+                            <ion-row class="partner-title">
+                                <ion-col text-center>{{ item.Username }} <br/> <span>Total </span>{{ item.Total }}</ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col col-4 text-left><span>Tombala</span><br />{{item.Tombala|number:'.2-2'}}</ion-col>
+                                <ion-col col-4 text-left><span>Casino</span><br />{{item.Casino|number:'.2-2'}}</ion-col>
+                                <ion-col col-4 text-left><span>Live Casino</span><br />{{item.Livecasino|number:'.2-2'}}</ion-col>
+                                <ion-col col-4 text-left><span>Bet</span><br />{{item.Bet|number:'.2-2'}}</ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
 
 
     </div>

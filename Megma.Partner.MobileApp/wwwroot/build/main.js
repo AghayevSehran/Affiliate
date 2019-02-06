@@ -6,7 +6,7 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -47,10 +47,10 @@ var AboutPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangePartnerPasswordPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_partner_service__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_tree_component_dist_models_tree_options_model__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_user_data__ = __webpack_require__(60);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -355,12 +355,12 @@ var ChangePartnerPasswordPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BetReportsPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportBetFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -501,12 +501,12 @@ var ReportBetFilterPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CasinoReportsPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportCasinoFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -628,12 +628,12 @@ var ReportCasinoFilterPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LiveCasinoReportsPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportLiveCasinoFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -755,12 +755,12 @@ var ReportLiveCasinoFilterPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TombalaReportsPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportTombalaFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -965,12 +965,12 @@ var UpDownPipe = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return GeneralReportsPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GeneralReportFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1093,12 +1093,12 @@ var GeneralReportFilterPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BetReportsTwoPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportBetTwoFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1220,12 +1220,12 @@ var ReportBetTwoFilterPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportsNew; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportsNewFilter; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1341,6 +1341,94 @@ var ReportsNewFilter = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 1135:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportstotalComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_reports_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var ReportstotalComponent = /** @class */ (function () {
+    function ReportstotalComponent(partnerService, navCtrl, alertCtrl, toastCtrl, loadingCtrl, modalCtrl, translateService) {
+        this.partnerService = partnerService;
+        this.navCtrl = navCtrl;
+        this.alertCtrl = alertCtrl;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.modalCtrl = modalCtrl;
+        this.translateService = translateService;
+        var firstDay = __WEBPACK_IMPORTED_MODULE_3_moment__().isoWeekday(2).format('YYYY-MM-DD');
+        var today = __WEBPACK_IMPORTED_MODULE_3_moment__().add(1, 'weeks').isoWeekday(2).format('YYYY-MM-DD');
+        if (__WEBPACK_IMPORTED_MODULE_3_moment__().isoWeekday() === 1) {
+            firstDay = __WEBPACK_IMPORTED_MODULE_3_moment__().isoWeekday(-5).format('YYYY-MM-DD');
+            today = __WEBPACK_IMPORTED_MODULE_3_moment__().add(1, 'days').format('YYYY-MM-DD');
+        }
+        this.reportFilter = {
+            startDate: firstDay,
+            endDate: today
+        };
+        this.getReports();
+    }
+    ReportstotalComponent.prototype.getReports = function () {
+        var _this = this;
+        var loading = this.loadingCtrl.create();
+        loading.present();
+        this.partnerService.getPlayerTotalHoldReports(this.reportFilter).then(function (response) {
+            loading.dismiss();
+            if (response.Status === __WEBPACK_IMPORTED_MODULE_4__app_app_config__["a" /* AppSettings */].REST_STATUS_ERROR) {
+                var msg_1;
+                _this.translateService.get(response.Message).subscribe(function (v) {
+                    msg_1 = v;
+                });
+                var error = _this.toastCtrl.create({ message: msg_1, cssClass: 'danger', duration: 3000, position: 'top' });
+                error.present();
+                return false;
+            }
+            _this.nodes = response.Data;
+            console.log(_this.nodes);
+        });
+    };
+    ReportstotalComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-reportstotal',template:/*ion-inline-start:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportstotal\reportstotal.html"*/'﻿<ion-header>\n\n\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>{{\'app.reportstotal.title\'|translate}}</ion-title>\n\n     \n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <ion-list class="normal-font">\n\n        <!-- <button md-button (click)="reportsTree.treeModel.expandAll()">Expand</button> -->\n\n\n\n        <tree-root #reportsTree [nodes]="nodes" [focused]="true" [options]="options">\n\n\n\n            <ng-template #treeNodeTemplate let-node let-index="index">\n\n\n\n                <ion-list class="normal-font nomargin">\n\n                    <ion-item>\n\n                        <div class="note-item" [ngClass]="{\'disabled\':!node.data.Active}">\n\n                            <ion-grid>\n\n                                <ion-row class="partner-title">\n\n                                    <ion-col text-center>{{ node.data.Username }}</ion-col>\n\n                                </ion-row>\n\n                                <ion-row class="border">\n\n                                    <ion-col col-4 text-left><span></span><br />{{ node.data.Name}}</ion-col>\n\n                                    <ion-col col-4 text-left><span>{{\'app.general.text.amount\'|translate}}</span><br />{{ node.data.Balance|number:\'.2-2\'}}</ion-col>\n\n                                    <ion-col col-4 text-left><span>Total</span><br />{{ node.data.Total|number:\'.2-2\'}}</ion-col>\n\n                                </ion-row>\n\n                          \n\n\n\n                            </ion-grid>\n\n                        </div>\n\n                    </ion-item>\n\n                </ion-list>\n\n\n\n\n\n            </ng-template>\n\n\n\n        </tree-root>\n\n\n\n    </ion-list>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportstotal\reportstotal.html"*/
+        })
+        /** reportstotal component*/
+        ,
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_reports_service__["a" /* ReportsService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */]])
+    ], ReportstotalComponent);
+    return ReportstotalComponent;
+}());
+
+//# sourceMappingURL=reportstotal.js.map
+
+/***/ }),
+
 /***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1350,10 +1438,10 @@ var ReportsNewFilter = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ModalContentPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ChangePasswordPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_data__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_partner_service__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_moment__);
@@ -1539,7 +1627,7 @@ var ChangePasswordPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PartnerService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__request__ = __webpack_require__(78);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1947,11 +2035,11 @@ var PartnerService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_storage__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_data__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__account_account__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2022,7 +2110,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 17:
+/***/ 16:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2075,13 +2163,13 @@ webpackEmptyAsyncContext.id = 321;
 
 /***/ }),
 
-/***/ 44:
+/***/ 41:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__request__ = __webpack_require__(78);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2358,6 +2446,25 @@ var ReportsService = /** @class */ (function () {
         });
     };
     ;
+    ReportsService.prototype.getPlayerTotalHoldReports = function (options) {
+        return __awaiter(this, void 0, void 0, function () {
+            var params, key, data;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        params = new URLSearchParams();
+                        for (key in options) {
+                            params.set(key, options[key]);
+                        }
+                        return [4 /*yield*/, this.requestService.get(__WEBPACK_IMPORTED_MODULE_1__app_app_config__["a" /* AppSettings */].API_ENDPOINT + 'getplayerholdreports?' + params)];
+                    case 1:
+                        data = _a.sent();
+                        return [2 /*return*/, data];
+                }
+            });
+        });
+    };
+    ;
     ReportsService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__request__["a" /* RequestService */]])
@@ -2383,12 +2490,12 @@ var ReportsService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return EditPlayerForm; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangePlayerPasswordPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__account_account__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tickets_tickets__ = __webpack_require__(488);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_user_data__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__login_login__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_moment__);
@@ -3091,11 +3198,11 @@ var ChangePlayerPasswordPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TicketFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_tickets_service__ = __webpack_require__(489);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_user_data__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Rxjs_rx__ = __webpack_require__(826);
@@ -3369,9 +3476,9 @@ var TicketFilterPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TicketService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__request__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3490,13 +3597,13 @@ var TicketService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportsPlayerPage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportPlayerFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_reports_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_reports_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_app_config__ = __webpack_require__(16);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3631,6 +3738,24 @@ var ReportsPlayerPage = /** @class */ (function () {
             _this.tombalalist = response.Data;
         });
     };
+    ReportsPlayerPage.prototype.getTotalReports = function () {
+        var _this = this;
+        // let loading = this.loadingCtrl.create();
+        // loading.present();
+        this.partnerService.getPlayerTotalHoldReports(this.reportFilter).then(function (response) {
+            //loading.dismiss();
+            if (response.Status === __WEBPACK_IMPORTED_MODULE_6__app_app_config__["a" /* AppSettings */].REST_STATUS_ERROR) {
+                var msg_6;
+                _this.translateService.get(response.Message).subscribe(function (v) {
+                    msg_6 = v;
+                });
+                var error = _this.toastCtrl.create({ message: msg_6, cssClass: 'danger', duration: 3000, position: 'top' });
+                error.present();
+                return false;
+            }
+            _this.totalReportlist = response.Data;
+        });
+    };
     ReportsPlayerPage.prototype.presentFilter = function () {
         var _this = this;
         var modal = this.modalCtrl.create(ReportPlayerFilterPage, this.reportFilter);
@@ -3644,18 +3769,12 @@ var ReportsPlayerPage = /** @class */ (function () {
     };
     ReportsPlayerPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-player-reports',template:/*ion-inline-start:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportsplayer\reports.html"*/'<ion-header>\n\n\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>{{\'app.playerreport.title\'|translate}}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="presentFilter()">\n\n                <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n\n\n    </ion-navbar>\n\n\n\n\n\n    <ion-toolbar>\n\n        <ion-segment [(ngModel)]="userSegment">\n\n            <ion-segment-button value="generalreport" (ionSelect)="getGeneralReports()"><span [translate]="\'app.menu.reports.generalreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="betreport" (ionSelect)="getReports()"><span [translate]="\'app.menu.reports.betreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="casinoreport" (ionSelect)="getCasinoReports()"><span [translate]="\'app.menu.reports.casinoreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="livecasinoreport" (ionSelect)="getLiveCasinoReports()"><span [translate]="\'app.menu.reports.livecasinoreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="tombalareport" (ionSelect)="getTombalaReports()"><span [translate]="\'app.menu.reports.tombalareport\'"></span></ion-segment-button>\n\n        </ion-segment>\n\n    </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <div class="page-content" [ngSwitch]="userSegment">\n\n\n\n\n\n        \n\n        <div *ngIf="glists">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'generalreport\'">\n\n                <ion-item *ngFor="let item of glists">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.bet\'|translate}}</span><br />{{item.Bet|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.livecasino\'|translate}}</span><br />{{ item.LiveCasino|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.slot\'|translate}}</span><br />{{ item.Casino|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n							<ion-row>\n\n								<ion-col col-4 text-left><span>{{\'app.general.text.tombala\'|translate}}</span><br />{{ item.Tombala|number:\'.2-2\'}}</ion-col>\n\n								<ion-col col-4 text-left><span>{{\'app.general.text.total\'|translate}}</span><br />{{ item.Total|number:\'.2-2\'}}</ion-col>\n\n								<ion-col col-4 text-left><span>{{\'app.general.text.fee\'|translate}}</span><br />{{ item.Fee|number:\'.2-2\'}}</ion-col>\n\n							</ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item> \n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="lists">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'betreport\'">\n\n                <ion-item *ngFor="let item of lists">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.deposit_amount\'|translate}}</span><br />{{ item.Stake|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.deposit\'|translate}}</span><br />{{ item.TotalDeposit }}</ion-col>\n\n                            </ion-row>\n\n							<ion-row>\n\n								<ion-col col-3 text-left><span>{{\'app.general.text.payout\'|translate}}</span><br />{{ item.Payout|number:\'.2-2\'}}</ion-col>\n\n								<ion-col col-3 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Hold|number:\'.2-2\'}}</ion-col>\n\n								<ion-col col-3 text-left><span>{{\'app.general.text.deposit\'|translate}}</span><br />{{ item.TotalDeposit }}</ion-col>\n\n								<ion-col col-3 text-left><span>{{\'app.general.text.fee\'|translate}}</span><br />{{ item.Fee|number:\'.2-2\'}}</ion-col>\n\n							</ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="casinolist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'casinoreport\'">\n\n                <ion-item *ngFor="let item of casinolist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.spin_count\'|translate}}</span><br />{{ item.SpinCount }}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.turnover\'|translate}}</span><br />{{ item.Turnover|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.payout\'|translate}}</span><br />{{ item.Payout|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Hold|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="livecasinolist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'livecasinoreport\'">\n\n                <ion-item *ngFor="let item of livecasinolist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.turnover\'|translate}}</span><br />{{ item.Turnover|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.payout\'|translate}}</span><br />{{ item.Payout|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Hold|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="tombalalist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'tombalareport\'">\n\n                <ion-item *ngFor="let item of tombalalist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.cardcount\'|translate}}</span><br />{{ item.CardCount }}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Amount|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportsplayer\reports.html"*/
+            selector: 'page-player-reports',template:/*ion-inline-start:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportsplayer\reports.html"*/'<ion-header>\n\n\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>{{\'app.playerreport.title\'|translate}}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="presentFilter()">\n\n                <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n\n\n    </ion-navbar>\n\n\n\n\n\n    <ion-toolbar>\n\n        <ion-segment [(ngModel)]="userSegment">\n\n            <ion-segment-button value="generalreport" (ionSelect)="getGeneralReports()"><span [translate]="\'app.menu.reports.generalreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="betreport" (ionSelect)="getReports()"><span [translate]="\'app.menu.reports.betreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="casinoreport" (ionSelect)="getCasinoReports()"><span [translate]="\'app.menu.reports.casinoreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="livecasinoreport" (ionSelect)="getLiveCasinoReports()"><span [translate]="\'app.menu.reports.livecasinoreport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="tombalareport" (ionSelect)="getTombalaReports()"><span [translate]="\'app.menu.reports.tombalareport\'"></span></ion-segment-button>\n\n            <ion-segment-button value="totalReport" (ionSelect)="getTotalReports()"><span>Reports total</span></ion-segment-button>\n\n\n\n        </ion-segment>\n\n    </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <div class="page-content" [ngSwitch]="userSegment">\n\n\n\n\n\n\n\n        <div *ngIf="glists">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'generalreport\'">\n\n                <ion-item *ngFor="let item of glists">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.bet\'|translate}}</span><br />{{item.Bet|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.livecasino\'|translate}}</span><br />{{ item.LiveCasino|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.slot\'|translate}}</span><br />{{ item.Casino|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.tombala\'|translate}}</span><br />{{ item.Tombala|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.total\'|translate}}</span><br />{{ item.Total|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.fee\'|translate}}</span><br />{{ item.Fee|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="lists">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'betreport\'">\n\n                <ion-item *ngFor="let item of lists">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.deposit_amount\'|translate}}</span><br />{{ item.Stake|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.deposit\'|translate}}</span><br />{{ item.Name }}</ion-col>\n\n                                <ion-col col-3 text-left><span>{{\'app.general.text.deposit\'|translate}}</span><br />{{ item.TotalDeposit }}</ion-col>\n\n                            </ion-row>\n\n                            </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="casinolist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'casinoreport\'">\n\n                <ion-item *ngFor="let item of casinolist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.spin_count\'|translate}}</span><br />{{ item.SpinCount }}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.turnover\'|translate}}</span><br />{{ item.Turnover|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.payout\'|translate}}</span><br />{{ item.Payout|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Hold|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n\n\n        <div *ngIf="livecasinolist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'livecasinoreport\'">\n\n                <ion-item *ngFor="let item of livecasinolist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.turnover\'|translate}}</span><br />{{ item.Turnover|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.payout\'|translate}}</span><br />{{ item.Payout|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Hold|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n        <div *ngIf="tombalalist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'tombalareport\'">\n\n                <ion-item *ngFor="let item of tombalalist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.balance\'|translate}}</span><br />{{item.Balance|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.cardcount\'|translate}}</span><br />{{ item.CardCount }}</ion-col>\n\n                                <ion-col col-4 text-left><span>{{\'app.general.text.profit\'|translate}}</span><br />{{ item.Amount|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n        <div *ngIf="totalReportlist">\n\n            <ion-list class="normal-font" *ngSwitchCase="\'totalReport\'">\n\n                <ion-item *ngFor="let item of totalReportlist">\n\n                    <div class="note-item">\n\n                        <ion-grid>\n\n                            <ion-row class="partner-title">\n\n                                <ion-col text-center>{{ item.Username }} <br/> <span>Total </span>{{ item.Total }}</ion-col>\n\n                            </ion-row>\n\n                            <ion-row>\n\n                                <ion-col col-4 text-left><span>Tombala</span><br />{{item.Tombala|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>Casino</span><br />{{item.Casino|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>Live Casino</span><br />{{item.Livecasino|number:\'.2-2\'}}</ion-col>\n\n                                <ion-col col-4 text-left><span>Bet</span><br />{{item.Bet|number:\'.2-2\'}}</ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportsplayer\reports.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_reports_service__["a" /* ReportsService */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__providers_reports_service__["a" /* ReportsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__providers_reports_service__["a" /* ReportsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* LoadingController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ModalController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _h || Object])
     ], ReportsPlayerPage);
     return ReportsPlayerPage;
+    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 ;
@@ -3682,10 +3801,10 @@ var ReportPlayerFilterPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-reportplayer-filter',template:/*ion-inline-start:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportsplayer\reports_filter.html"*/'<ion-header>\n\n    <ion-toolbar>\n\n        <ion-buttons start>\n\n            <button ion-button (click)="dismiss()">{{\'app.btn.cancel\'|translate}}</button>\n\n        </ion-buttons>\n\n\n\n        <ion-title>{{\'app.general.text.filtre\'|translate}}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button (click)="applyFilters()" strong>{{\'app.btn.apply\'|translate}}</button>\n\n        </ion-buttons>\n\n    </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content class="outer-content">\n\n\n\n    <ion-list>\n\n\n\n        <ion-item>\n\n            <ion-label>{{\'app.general.text.startdate\'|translate}}:</ion-label>\n\n            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="filterSettings.startDate" cancelText="{{\'app.btn.cancel\'|translate}}" doneText="{{\'app.btn.ok\'|translate}}"></ion-datetime>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n            <ion-label>{{\'app.general.text.enddate\'|translate}}:</ion-label>\n\n            <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="filterSettings.endDate" cancelText="{{\'app.btn.cancel\'|translate}}" doneText="{{\'app.btn.ok\'|translate}}"></ion-datetime>\n\n        </ion-item>\n\n\n\n\n\n        <ion-item>\n\n            <ion-label>{{\'app.general.label.active\'|translate}}:</ion-label>\n\n            <ion-select [(ngModel)]="filterSettings.onlyActive">\n\n                <ion-option value="" selected>{{\'app.options.item.all\'|translate}}</ion-option>\n\n                <ion-option value="true">{{\'app.options.item.only_active\'|translate}}</ion-option>\n\n                <ion-option value="false">{{\'app.options.item.only_passive\'|translate}}</ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n\n\n\n\n    </ion-list>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\pages\reportsplayer\reports_filter.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */]) === "function" && _b || Object])
     ], ReportPlayerFilterPage);
     return ReportPlayerFilterPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=reports.js.map
@@ -3712,9 +3831,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__ = __webpack_require__(364);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__request__ = __webpack_require__(78);
@@ -3978,10 +4097,10 @@ var AuthenticationService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_http_loader__ = __webpack_require__(626);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_tree_component__ = __webpack_require__(628);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__(813);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(360);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(363);
@@ -4001,19 +4120,21 @@ var AuthenticationService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_reportscasino_reports__ = __webpack_require__(1125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_reportslivecasino_reports__ = __webpack_require__(1126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_reportstombala_reports__ = __webpack_require__(1127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_reports_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_reports_service__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pipes_general__ = __webpack_require__(1128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_reportsplayer_reports__ = __webpack_require__(592);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_reportsgeneral_reports__ = __webpack_require__(1129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_reportsbettwo_reports__ = __webpack_require__(1130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_reportsnew_reports__ = __webpack_require__(1131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_brmasker_ionic_3__ = __webpack_require__(1132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_reportstotal_reportstotal__ = __webpack_require__(1135);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -4089,6 +4210,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_24__pages_reportslivecasino_reports__["b" /* ReportLiveCasinoFilterPage */],
                 __WEBPACK_IMPORTED_MODULE_25__pages_reportstombala_reports__["a" /* ReportTombalaFilterPage */],
                 __WEBPACK_IMPORTED_MODULE_23__pages_reportscasino_reports__["a" /* CasinoReportsPage */],
+                __WEBPACK_IMPORTED_MODULE_33__pages_reportstotal_reportstotal__["a" /* ReportstotalComponent */],
                 __WEBPACK_IMPORTED_MODULE_24__pages_reportslivecasino_reports__["a" /* LiveCasinoReportsPage */],
                 __WEBPACK_IMPORTED_MODULE_25__pages_reportstombala_reports__["b" /* TombalaReportsPage */],
                 __WEBPACK_IMPORTED_MODULE_28__pages_reportsplayer_reports__["b" /* ReportsPlayerPage */],
@@ -4136,6 +4258,7 @@ var AppModule = /** @class */ (function () {
                         { component: __WEBPACK_IMPORTED_MODULE_30__pages_reportsbettwo_reports__["a" /* BetReportsTwoPage */], name: 'BetReportsTwoPage', segment: 'reportstwo' },
                         { component: __WEBPACK_IMPORTED_MODULE_28__pages_reportsplayer_reports__["b" /* ReportsPlayerPage */], name: 'ReportsPlayerPage', segment: 'reports/player-reports' },
                         { component: __WEBPACK_IMPORTED_MODULE_23__pages_reportscasino_reports__["a" /* CasinoReportsPage */], name: 'CasinoReportsPage', segment: 'reports/casino' },
+                        { component: __WEBPACK_IMPORTED_MODULE_33__pages_reportstotal_reportstotal__["a" /* ReportstotalComponent */], name: 'ReportstotalComponent', segment: 'reports/totalreport' },
                         { component: __WEBPACK_IMPORTED_MODULE_24__pages_reportslivecasino_reports__["a" /* LiveCasinoReportsPage */], name: 'LiveCasinoReportsPage', segment: 'reports/livecasino' },
                         { component: __WEBPACK_IMPORTED_MODULE_25__pages_reportstombala_reports__["b" /* TombalaReportsPage */], name: 'TombalaReportsPage', segment: 'reports/tombala' },
                         { component: __WEBPACK_IMPORTED_MODULE_31__pages_reportsnew_reports__["a" /* ReportsNew */], name: 'ReportsNew', segment: 'reportsnew' },
@@ -4178,6 +4301,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_23__pages_reportscasino_reports__["b" /* ReportCasinoFilterPage */],
                 __WEBPACK_IMPORTED_MODULE_25__pages_reportstombala_reports__["a" /* ReportTombalaFilterPage */],
                 __WEBPACK_IMPORTED_MODULE_23__pages_reportscasino_reports__["a" /* CasinoReportsPage */],
+                __WEBPACK_IMPORTED_MODULE_33__pages_reportstotal_reportstotal__["a" /* ReportstotalComponent */],
                 __WEBPACK_IMPORTED_MODULE_24__pages_reportslivecasino_reports__["a" /* LiveCasinoReportsPage */],
                 __WEBPACK_IMPORTED_MODULE_28__pages_reportsplayer_reports__["b" /* ReportsPlayerPage */],
                 __WEBPACK_IMPORTED_MODULE_28__pages_reportsplayer_reports__["a" /* ReportPlayerFilterPage */],
@@ -4212,7 +4336,7 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RequestService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(364);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
@@ -4333,10 +4457,10 @@ var RequestService = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PartnerApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(360);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_account_account__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_user_data__ = __webpack_require__(60);
@@ -4344,7 +4468,7 @@ var RequestService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_reportsplayer_reports__ = __webpack_require__(592);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_config__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_config__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(363);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4499,15 +4623,22 @@ var PartnerApp = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
     ], PartnerApp.prototype, "nav", void 0);
     PartnerApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\app\app.template.html"*/'<ion-split-pane>\n\n    <!-- logged out menu -->\n\n    <ion-menu id="loggedInMenu1" [content]="content">\n\n        <ion-header>\n\n            <ion-toolbar>\n\n                <ion-title><img class="pinolo-leftside-logo" src="assets/img/appicon.svg" alt="Pinolo Partner"></ion-title>\n\n            </ion-toolbar>\n\n        </ion-header>\n\n        <ion-content class="outer-content">\n\n\n\n            <ion-list>\n\n                <ion-list-header>{{\'app.menu.root\'|translate}}</ion-list-header>\n\n                <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">\n\n                  <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon> {{p.title|translate}}\n\n                </button>\n\n            </ion-list>\n\n\n\n            <ion-list>\n\n                <ion-list-header>{{\'app.menu.reports\'|translate}}</ion-list-header>\n\n                <button ion-item menuClose *ngFor="let p of appReports" (click)="openPage(p)">\n\n                  <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>{{p.title|translate}}\n\n                </button>\n\n            </ion-list>\n\n\n\n\n\n            <ion-list>\n\n                <ion-list-header>{{\'app.menu.other\'|translate}}</ion-list-header>\n\n                <button ion-item menuClose *ngFor="let p of appOthers" (click)="openPage(p)">\n\n                  <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon> {{p.title|translate}}\n\n                </button>\n\n            </ion-list>\n\n\n\n        </ion-content>\n\n\n\n    </ion-menu>\n\n    \n\n\n\n    <!-- main navigation -->\n\n    <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>\n\n\n\n</ion-split-pane>'/*ion-inline-end:"C:\Users\sehran.a\Documents\MyFIles\Game\Affiliate\Megma.Partner.MobileApp\src\app\app.template.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* AuthenticationService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__["a" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]) === "function" && _k || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_user_data__["a" /* AuthenticationService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_12_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]])
     ], PartnerApp);
     return PartnerApp;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 
 //# sourceMappingURL=app.component.js.map
